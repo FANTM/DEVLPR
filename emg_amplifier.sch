@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 3 3
 Title "DEVLPR"
 Date "2021-03-31"
 Rev "dev.a.1"
@@ -13,182 +13,12 @@ Comment2 "Email: hello@getfantm.com"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	9850 1850 9800 1850
-Wire Wire Line
-	9800 1850 9800 2050
-Connection ~ 9800 2050
-Wire Wire Line
-	10450 1750 10650 1750
-Wire Wire Line
-	10650 2050 10650 1750
-Connection ~ 10650 1750
-Wire Wire Line
-	9900 1050 10650 1050
-Wire Wire Line
-	10650 1050 10650 1750
-$Comp
-L power:GND #PWR032
-U 1 1 5FF99FF0
-P 9800 2850
-F 0 "#PWR032" H 9800 2600 50  0001 C CNN
-F 1 "GND" H 9805 2677 50  0000 C CNN
-F 2 "" H 9800 2850 50  0001 C CNN
-F 3 "" H 9800 2850 50  0001 C CNN
-	1    9800 2850
-	1    0    0    -1  
-$EndComp
-Text Label 7750 1650 0    50   ~ 0
-SECOND_ORDER_LP
-Text Label 10900 1750 2    50   ~ 0
-LP_2
-$Comp
-L Device:R_US R12
-U 1 1 5FFD35D0
-P 6100 1950
-F 0 "R12" H 6000 2100 50  0000 C CNN
-F 1 "100k" H 6200 2100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6140 1940 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 6100 1950 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07100KL/726889" H 6100 1950 50  0001 C CNN "DK_Detail_Page"
-F 5 "311-100KHRCT-ND" H 6100 1950 50  0001 C CNN "Digi-Key Part Number"
-F 6 "Yageo" H 6100 1950 50  0001 C CNN "Manufacturer"
-F 7 "RC0603FR-07100KL" H 6100 1950 50  0001 C CNN "Manufacturer Product Number"
-F 8 "RES SMD 100K OHM 1% 1/10W 0603" H 6100 1950 50  0001 C CNN "Description"
-F 9 "±1%" H 5950 1850 50  0000 C CNN "Tolerance"
-F 10 "0.1W, 1/10W" H 6100 1950 50  0001 C CNN "Power (Watts)"
-F 11 "0603" H 6200 1850 50  0000 C CNN "Package"
-	1    6100 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 2600 6200 2650
-Wire Wire Line
-	6000 1050 7150 1050
-Wire Wire Line
-	7150 1050 7150 1650
-Wire Wire Line
-	7150 2050 7150 1650
-Connection ~ 7150 1650
-Text Label 4200 1550 0    50   ~ 0
-SECOND_ORDER_HP
-Text Label 7450 1650 2    50   ~ 0
-HP_2
-$Comp
-L power:GND #PWR030
-U 1 1 5FFEE8CF
-P 6200 2650
-F 0 "#PWR030" H 6200 2400 50  0001 C CNN
-F 1 "GND" H 6205 2477 50  0000 C CNN
-F 2 "" H 6200 2650 50  0001 C CNN
-F 3 "" H 6200 2650 50  0001 C CNN
-	1    6200 2650
-	1    0    0    -1  
-$EndComp
-Text Notes 1150 3700 0    50   ~ 0
-G = 1 + (100 kΩ / RG)\nG = 1 + (100 * 10^3 / 560)\nG = 179.57\n
-$Comp
-L Device:C C9
-U 1 1 6007F397
-P 5300 4600
-F 0 "C9" V 5250 4400 50  0000 C CNN
-F 1 "0.15uF" V 5250 4800 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5338 4450 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10B154KO8NNNC.jsp" H 5300 4600 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B154KO8NNNC/3887630" V 5300 4600 50  0001 C CNN "DK_Detail_Page"
-F 5 "1276-1972-1-ND" V 5300 4600 50  0001 C CNN "Digi-Key Part Number"
-F 6 "Samsung Electro-Mechanics" V 5300 4600 50  0001 C CNN "Manufacturer"
-F 7 "CL10B154KO8NNNC" V 5300 4600 50  0001 C CNN "Manufacturer Product Number"
-F 8 "CAP CER 0.15UF 16V X7R 0603" V 5300 4600 50  0001 C CNN "Description"
-F 9 "16V" V 5300 4600 50  0001 C CNN "Voltage - Rated"
-F 10 "±10%" V 5350 4400 50  0000 C CNN "Tolerance"
-F 11 "0603" V 5350 4800 50  0000 C CNN "Package"
-	1    5300 4600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C11
-U 1 1 6007FCAD
-P 7700 4850
-F 0 "C11" H 7900 4750 50  0000 R CNN
-F 1 "0.033uF" H 7650 4750 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7738 4700 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 7700 4850 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB333/5883762" H 7700 4850 50  0001 C CNN "DK_Detail_Page"
-F 5 "311-4071-1-ND" H 7700 4850 50  0001 C CNN "Digi-Key Part Number"
-F 6 "Yageo" H 7700 4850 50  0001 C CNN "Manufacturer"
-F 7 "CC0603KRX7R7BB333" H 7700 4850 50  0001 C CNN "Manufacturer Product Number"
-F 8 "CAP CER 0.033UF 16V X7R 0603" H 7700 4850 50  0001 C CNN "Description"
-F 9 "±10%" H 7950 4950 50  0000 R CNN "Tolerance"
-F 10 "16V" H 7700 4850 50  0001 C CNN "Voltage - Rated"
-F 11 "0603" H 7650 4950 50  0000 R CNN "Package"
-	1    7700 4850
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5450 4600 5650 4600
-Wire Wire Line
-	5650 4600 5650 4750
-Wire Wire Line
-	7500 4600 7700 4600
-Wire Wire Line
-	7700 4600 7700 4700
-$Comp
-L power:GND #PWR029
-U 1 1 6008C734
-P 5650 5200
-F 0 "#PWR029" H 5650 4950 50  0001 C CNN
-F 1 "GND" H 5655 5027 50  0000 C CNN
-F 2 "" H 5650 5200 50  0001 C CNN
-F 3 "" H 5650 5200 50  0001 C CNN
-	1    5650 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR031
-U 1 1 6008D03A
-P 7700 5200
-F 0 "#PWR031" H 7700 4950 50  0001 C CNN
-F 1 "GND" H 7705 5027 50  0000 C CNN
-F 2 "" H 7700 5200 50  0001 C CNN
-F 3 "" H 7700 5200 50  0001 C CNN
-	1    7700 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5650 5050 5650 5200
-Wire Wire Line
-	5150 4600 4950 4600
-Wire Wire Line
-	7200 4600 7000 4600
-Text Label 5950 4600 2    50   ~ 0
-HP_1
-Connection ~ 5650 4600
-Text Label 7000 4600 2    50   ~ 0
-FIRST_ORDER_LP
-Connection ~ 7700 4600
-Text Label 8000 4600 2    50   ~ 0
-LP_1
-Text Label 4950 4600 2    50   ~ 0
-FIRST_ORDER_HP
-Wire Wire Line
-	9800 2050 10650 2050
-Text Notes 8850 4100 0    50   ~ 0
-FILTER CONFIGURATION\n
+Text Notes 1450 3525 0    50   ~ 0
+G = 1 + (100 kΩ / RG)\n
 Wire Notes Line
-	4150 450  4150 7800
-Text Notes 4200 4150 0    50   ~ 0
-1ST ORDER\nPASSIVE HP & LP FILTERS
-Text Notes 4200 700  0    50   ~ 0
-2ND ORDER\nACTIVE HP & LP FILTERS
+	4525 450  4525 7800
 Text Notes 550  650  0    50   ~ 0
 INSTRUMENTATION AMPLIFIER\n
-Wire Notes Line
-	450  3900 11300 3900
-Text Notes 4550 5800 0    50   ~ 0
-Fc = 1 / (2 * pi * R * C)\n= 1 / (2 * pi * 100kOhm * 0.15uF)\n= 10.61Hz\n
-Text Notes 6700 5800 0    50   ~ 0
-Fc = 1 / (2 * pi * R * C)\n= 1 / (2 * pi * 10kOhm * 0.033uF) \n= 482.29Hz\n
 Wire Wire Line
 	2100 2650 1900 2650
 Wire Wire Line
@@ -210,339 +40,14 @@ Wire Wire Line
 Wire Wire Line
 	1950 2350 1950 2550
 Wire Wire Line
-	7700 5000 7700 5200
-Wire Wire Line
 	2950 800  2950 900 
 Wire Wire Line
 	2950 1200 2950 1300
 $Comp
-L Device:C C7
-U 1 1 61A6A74A
-P 5200 1550
-F 0 "C7" V 5150 1400 50  0000 C CNN
-F 1 "0.15uF" V 5150 1750 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5238 1400 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10B154KO8NNNC.jsp" H 5200 1550 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B154KO8NNNC/3887630" V 5200 1550 50  0001 C CNN "DK_Detail_Page"
-F 5 "1276-1972-1-ND" V 5200 1550 50  0001 C CNN "Digi-Key Part Number"
-F 6 "Samsung Electro-Mechanics" V 5200 1550 50  0001 C CNN "Manufacturer"
-F 7 "CL10B154KO8NNNC" V 5200 1550 50  0001 C CNN "Manufacturer Product Number"
-F 8 "CAP CER 0.15UF 16V X7R 0603" V 5200 1550 50  0001 C CNN "Description"
-F 9 "16V" V 5200 1550 50  0001 C CNN "Voltage - Rated"
-F 10 "±10%" V 5250 1350 50  0000 C CNN "Tolerance"
-F 11 "0603" V 5250 1700 50  0000 C CNN "Package"
-	1    5200 1550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C10
-U 1 1 61A7FF41
-P 5850 1550
-F 0 "C10" V 5800 1450 50  0000 C CNN
-F 1 "0.15uF" V 5800 1750 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5888 1400 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10B154KO8NNNC.jsp" H 5850 1550 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B154KO8NNNC/3887630" V 5850 1550 50  0001 C CNN "DK_Detail_Page"
-F 5 "1276-1972-1-ND" V 5850 1550 50  0001 C CNN "Digi-Key Part Number"
-F 6 "Samsung Electro-Mechanics" V 5850 1550 50  0001 C CNN "Manufacturer"
-F 7 "CL10B154KO8NNNC" V 5850 1550 50  0001 C CNN "Manufacturer Product Number"
-F 8 "CAP CER 0.15UF 16V X7R 0603" V 5850 1550 50  0001 C CNN "Description"
-F 9 "16V" V 5850 1550 50  0001 C CNN "Voltage - Rated"
-F 10 "±10%" V 5900 1400 50  0000 C CNN "Tolerance"
-F 11 "0603" V 5900 1700 50  0000 C CNN "Package"
-	1    5850 1550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7050 1650 7150 1650
-Wire Wire Line
-	6450 1750 6350 1750
-Wire Wire Line
-	6350 1750 6350 2050
-Wire Wire Line
-	7150 2050 6350 2050
-Connection ~ 6350 2050
-Wire Wire Line
-	6350 2050 6350 2150
-Wire Wire Line
-	6350 2450 6350 2600
-Wire Wire Line
-	6350 2600 6200 2600
-Connection ~ 6200 2600
-Wire Wire Line
-	6100 2600 6200 2600
-Wire Wire Line
-	5700 1550 5600 1550
-Wire Wire Line
-	5600 1550 5600 1050
-Wire Wire Line
-	5600 1050 5700 1050
-Wire Wire Line
-	5350 1550 5600 1550
-Connection ~ 5600 1550
-Wire Wire Line
-	5050 1550 4200 1550
-$Comp
-L Device:R_US R?
-U 1 1 61B3230A
-P 6350 2300
-AR Path="/61B3230A" Ref="R?"  Part="1" 
-AR Path="/606EA892/61B3230A" Ref="R?"  Part="1" 
-AR Path="/6043E029/61B3230A" Ref="R13"  Part="1" 
-F 0 "R13" H 6450 2200 50  0000 R CNN
-F 1 "10k" H 6300 2200 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6390 2290 50  0001 C CNN
-F 3 "https://www.seielect.com/catalog/sei-rncp.pdf" H 6350 2300 50  0001 C CNN
-F 4 "RNCP0603FTD10K0CT-ND" H 6350 2300 50  0001 C CNN "Digi-Key Part Number"
-F 5 "Stackpole Electronics Inc" H 6350 2300 50  0001 C CNN "Manufacturer"
-F 6 "RNCP0603FTD10K0" H 6350 2300 50  0001 C CNN "Manufacturer Product Number"
-F 7 "Stackpole Electronics Inc" H 6350 2300 50  0001 C CNN "Supplier"
-F 8 "RES 10K OHM 1% 1/8W 0603" H 6350 2300 50  0001 C CNN "Description"
-F 9 "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Anti-Sulfur, Moisture Resistant Thin Film" H 6350 2300 50  0001 C CNN "Detailed Description"
-F 10 "±1%" H 6450 2450 50  0000 C CNN "Tolerance"
-F 11 "0.125W, 1/8W" H 6350 2300 50  0001 C CNN "Power (Watts)"
-F 12 "0603" H 6250 2450 50  0000 C CNN "Package"
-	1    6350 2300
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 61B3685B
-P 9800 2450
-AR Path="/61B3685B" Ref="R?"  Part="1" 
-AR Path="/606EA892/61B3685B" Ref="R?"  Part="1" 
-AR Path="/6043E029/61B3685B" Ref="R17"  Part="1" 
-F 0 "R17" H 9900 2350 50  0000 R CNN
-F 1 "10k" H 9750 2350 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9840 2440 50  0001 C CNN
-F 3 "https://www.seielect.com/catalog/sei-rncp.pdf" H 9800 2450 50  0001 C CNN
-F 4 "RNCP0603FTD10K0CT-ND" H 9800 2450 50  0001 C CNN "Digi-Key Part Number"
-F 5 "Stackpole Electronics Inc" H 9800 2450 50  0001 C CNN "Manufacturer"
-F 6 "RNCP0603FTD10K0" H 9800 2450 50  0001 C CNN "Manufacturer Product Number"
-F 7 "Stackpole Electronics Inc" H 9800 2450 50  0001 C CNN "Supplier"
-F 8 "RES 10K OHM 1% 1/8W 0603" H 9800 2450 50  0001 C CNN "Description"
-F 9 "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Anti-Sulfur, Moisture Resistant Thin Film" H 9800 2450 50  0001 C CNN "Detailed Description"
-F 10 "±1%" H 9900 2600 50  0000 C CNN "Tolerance"
-F 11 "0.125W, 1/8W" H 9800 2450 50  0001 C CNN "Power (Watts)"
-F 12 "0603" H 9700 2600 50  0000 C CNN "Package"
-	1    9800 2450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 61B371F0
-P 8750 1650
-AR Path="/61B371F0" Ref="R?"  Part="1" 
-AR Path="/606EA892/61B371F0" Ref="R?"  Part="1" 
-AR Path="/6043E029/61B371F0" Ref="R15"  Part="1" 
-F 0 "R15" V 8800 1850 50  0000 R CNN
-F 1 "10k" V 8800 1550 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8790 1640 50  0001 C CNN
-F 3 "https://www.seielect.com/catalog/sei-rncp.pdf" H 8750 1650 50  0001 C CNN
-F 4 "RNCP0603FTD10K0CT-ND" H 8750 1650 50  0001 C CNN "Digi-Key Part Number"
-F 5 "Stackpole Electronics Inc" H 8750 1650 50  0001 C CNN "Manufacturer"
-F 6 "RNCP0603FTD10K0" H 8750 1650 50  0001 C CNN "Manufacturer Product Number"
-F 7 "Stackpole Electronics Inc" H 8750 1650 50  0001 C CNN "Supplier"
-F 8 "RES 10K OHM 1% 1/8W 0603" H 8750 1650 50  0001 C CNN "Description"
-F 9 "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Anti-Sulfur, Moisture Resistant Thin Film" H 8750 1650 50  0001 C CNN "Detailed Description"
-F 10 "±1%" V 8700 1800 50  0000 C CNN "Tolerance"
-F 11 "0.125W, 1/8W" H 8750 1650 50  0001 C CNN "Power (Watts)"
-F 12 "0603" V 8700 1450 50  0000 C CNN "Package"
-	1    8750 1650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 61B379D7
-P 9450 1650
-AR Path="/61B379D7" Ref="R?"  Part="1" 
-AR Path="/606EA892/61B379D7" Ref="R?"  Part="1" 
-AR Path="/6043E029/61B379D7" Ref="R16"  Part="1" 
-F 0 "R16" V 9500 1850 50  0000 R CNN
-F 1 "10k" V 9500 1550 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9490 1640 50  0001 C CNN
-F 3 "https://www.seielect.com/catalog/sei-rncp.pdf" H 9450 1650 50  0001 C CNN
-F 4 "RNCP0603FTD10K0CT-ND" H 9450 1650 50  0001 C CNN "Digi-Key Part Number"
-F 5 "Stackpole Electronics Inc" H 9450 1650 50  0001 C CNN "Manufacturer"
-F 6 "RNCP0603FTD10K0" H 9450 1650 50  0001 C CNN "Manufacturer Product Number"
-F 7 "Stackpole Electronics Inc" H 9450 1650 50  0001 C CNN "Supplier"
-F 8 "RES 10K OHM 1% 1/8W 0603" H 9450 1650 50  0001 C CNN "Description"
-F 9 "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Anti-Sulfur, Moisture Resistant Thin Film" H 9450 1650 50  0001 C CNN "Detailed Description"
-F 10 "±1%" V 9400 1800 50  0000 C CNN "Tolerance"
-F 11 "0.125W, 1/8W" H 9450 1650 50  0001 C CNN "Power (Watts)"
-F 12 "0603" V 9400 1450 50  0000 C CNN "Package"
-	1    9450 1650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 61B4C3AC
-P 7350 4600
-AR Path="/61B4C3AC" Ref="R?"  Part="1" 
-AR Path="/606EA892/61B4C3AC" Ref="R?"  Part="1" 
-AR Path="/6043E029/61B4C3AC" Ref="R14"  Part="1" 
-F 0 "R14" V 7400 4800 50  0000 R CNN
-F 1 "10k" V 7400 4500 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7390 4590 50  0001 C CNN
-F 3 "https://www.seielect.com/catalog/sei-rncp.pdf" H 7350 4600 50  0001 C CNN
-F 4 "RNCP0603FTD10K0CT-ND" H 7350 4600 50  0001 C CNN "Digi-Key Part Number"
-F 5 "Stackpole Electronics Inc" H 7350 4600 50  0001 C CNN "Manufacturer"
-F 6 "RNCP0603FTD10K0" H 7350 4600 50  0001 C CNN "Manufacturer Product Number"
-F 7 "Stackpole Electronics Inc" H 7350 4600 50  0001 C CNN "Supplier"
-F 8 "RES 10K OHM 1% 1/8W 0603" H 7350 4600 50  0001 C CNN "Description"
-F 9 "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Anti-Sulfur, Moisture Resistant Thin Film" H 7350 4600 50  0001 C CNN "Detailed Description"
-F 10 "±1%" V 7300 4750 50  0000 C CNN "Tolerance"
-F 11 "0.125W, 1/8W" H 7350 4600 50  0001 C CNN "Power (Watts)"
-F 12 "0603" V 7300 4400 50  0000 C CNN "Package"
-	1    7350 4600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C13
-U 1 1 61B5B841
-P 9750 1050
-F 0 "C13" V 9800 1300 50  0000 R CNN
-F 1 "0.033uF" V 9800 950 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9788 900 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 9750 1050 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB333/5883762" H 9750 1050 50  0001 C CNN "DK_Detail_Page"
-F 5 "311-4071-1-ND" H 9750 1050 50  0001 C CNN "Digi-Key Part Number"
-F 6 "Yageo" H 9750 1050 50  0001 C CNN "Manufacturer"
-F 7 "CC0603KRX7R7BB333" H 9750 1050 50  0001 C CNN "Manufacturer Product Number"
-F 8 "CAP CER 0.033UF 16V X7R 0603" H 9750 1050 50  0001 C CNN "Description"
-F 9 "±10%" V 9700 1300 50  0000 R CNN "Tolerance"
-F 10 "16V" H 9750 1050 50  0001 C CNN "Voltage - Rated"
-F 11 "0603" V 9700 950 50  0000 R CNN "Package"
-	1    9750 1050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C12
-U 1 1 61B5C319
-P 9400 2050
-F 0 "C12" H 9600 1950 50  0000 R CNN
-F 1 "0.033uF" H 9350 1950 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9438 1900 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 9400 2050 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB333/5883762" H 9400 2050 50  0001 C CNN "DK_Detail_Page"
-F 5 "311-4071-1-ND" H 9400 2050 50  0001 C CNN "Digi-Key Part Number"
-F 6 "Yageo" H 9400 2050 50  0001 C CNN "Manufacturer"
-F 7 "CC0603KRX7R7BB333" H 9400 2050 50  0001 C CNN "Manufacturer Product Number"
-F 8 "CAP CER 0.033UF 16V X7R 0603" H 9400 2050 50  0001 C CNN "Description"
-F 9 "±10%" H 9650 2150 50  0000 R CNN "Tolerance"
-F 10 "16V" H 9400 2050 50  0001 C CNN "Voltage - Rated"
-F 11 "0603" H 9350 2150 50  0000 R CNN "Package"
-	1    9400 2050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9800 2050 9800 2300
-Wire Wire Line
-	9800 2850 9800 2750
-Wire Wire Line
-	9400 2200 9400 2750
-Wire Wire Line
-	9400 2750 9800 2750
-Connection ~ 9800 2750
-Wire Wire Line
-	9800 2750 9800 2600
-Wire Wire Line
-	9800 1650 9800 1750
-Wire Wire Line
-	9800 1750 9400 1750
-Wire Wire Line
-	9400 1750 9400 1900
-Connection ~ 9800 1650
-Wire Wire Line
-	9800 1650 9850 1650
-Wire Wire Line
-	9600 1650 9800 1650
-Wire Wire Line
-	8900 1650 9100 1650
-Wire Wire Line
-	9600 1050 9100 1050
-Wire Wire Line
-	9100 1050 9100 1650
-Connection ~ 9100 1650
-Wire Wire Line
-	9100 1650 9300 1650
-Wire Wire Line
-	7750 1650 8600 1650
-Wire Wire Line
-	6000 1550 6100 1550
-Wire Wire Line
-	6100 1550 6100 1800
-Connection ~ 6100 1550
-Wire Wire Line
-	6100 1550 6450 1550
-Wire Wire Line
-	6100 2100 6100 2600
-$Comp
-L Device:R_US R11
-U 1 1 61BF108E
-P 5850 1050
-F 0 "R11" V 5800 900 50  0000 C CNN
-F 1 "100k" V 5800 1250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5890 1040 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5850 1050 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07100KL/726889" H 5850 1050 50  0001 C CNN "DK_Detail_Page"
-F 5 "311-100KHRCT-ND" H 5850 1050 50  0001 C CNN "Digi-Key Part Number"
-F 6 "Yageo" H 5850 1050 50  0001 C CNN "Manufacturer"
-F 7 "RC0603FR-07100KL" H 5850 1050 50  0001 C CNN "Manufacturer Product Number"
-F 8 "RES SMD 100K OHM 1% 1/10W 0603" H 5850 1050 50  0001 C CNN "Description"
-F 9 "±1%" V 5900 900 50  0000 C CNN "Tolerance"
-F 10 "0.1W, 1/10W" H 5850 1050 50  0001 C CNN "Power (Watts)"
-F 11 "0603" V 5900 1250 50  0000 C CNN "Package"
-	1    5850 1050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R10
-U 1 1 61BF672E
-P 5650 4900
-F 0 "R10" H 5550 5050 50  0000 C CNN
-F 1 "100k" H 5750 5050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5690 4890 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5650 4900 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07100KL/726889" H 5650 4900 50  0001 C CNN "DK_Detail_Page"
-F 5 "311-100KHRCT-ND" H 5650 4900 50  0001 C CNN "Digi-Key Part Number"
-F 6 "Yageo" H 5650 4900 50  0001 C CNN "Manufacturer"
-F 7 "RC0603FR-07100KL" H 5650 4900 50  0001 C CNN "Manufacturer Product Number"
-F 8 "RES SMD 100K OHM 1% 1/10W 0603" H 5650 4900 50  0001 C CNN "Description"
-F 9 "±1%" H 5500 4800 50  0000 C CNN "Tolerance"
-F 10 "0.1W, 1/10W" H 5650 4900 50  0001 C CNN "Power (Watts)"
-F 11 "0603" H 5750 4800 50  0000 C CNN "Package"
-	1    5650 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 61894EB8
-P 2950 1050
-AR Path="/61894EB8" Ref="C?"  Part="1" 
-AR Path="/606EA892/61894EB8" Ref="C?"  Part="1" 
-AR Path="/6043E029/61894EB8" Ref="C6"  Part="1" 
-F 0 "C6" H 3050 950 50  0000 C CNN
-F 1 "0.1uF" H 2800 950 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2988 900 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 2950 1050 50  0001 C CNN
-F 4 "CC0603KRX7R7BB104" H 2950 1050 50  0001 C CNN "Manufacturer Product Number"
-F 5 "X7R" H 2950 1050 50  0001 C CNN "Temperature"
-F 6 "±10%" H 3100 1150 50  0000 C CNN "Tolerance"
-F 7 "16V" H 2950 1050 50  0001 C CNN "Rated Voltage"
-F 8 "0603" H 2800 1150 50  0000 C CNN "Package Size"
-F 9 "CAP CER 0.1UF 16V X7R 0603" H 2950 1050 50  0001 C CNN "Description"
-F 10 "Yageo" H 2950 1050 50  0001 C CNN "Supplier"
-F 11 "Yageo" H 2950 1050 50  0001 C CNN "Manufacturer"
-F 12 "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB104/302822" H 2950 1050 50  0001 C CNN "Digikey"
-	1    2950 1050
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR023
+L power:GND #PWR028
 U 1 1 6028566F
 P 2950 1300
-F 0 "#PWR023" H 2950 1050 50  0001 C CNN
+F 0 "#PWR028" H 2950 1050 50  0001 C CNN
 F 1 "GND" H 2955 1127 50  0000 C CNN
 F 2 "" H 2950 1300 50  0001 C CNN
 F 3 "" H 2950 1300 50  0001 C CNN
@@ -550,10 +55,10 @@ F 3 "" H 2950 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Linear-Amplifiers-Instrumentation-OP-Amps-Buffer-Amps:INA333AIDGKR U2
+L dk_Linear-Amplifiers-Instrumentation-OP-Amps-Buffer-Amps:INA333AIDGKR U3
 U 1 1 6020BE21
 P 2500 2350
-F 0 "U2" H 2150 2500 60  0000 L CNN
+F 0 "U3" H 2150 2500 60  0000 L CNN
 F 1 "INA333AIDGKR" H 2600 1800 60  0000 L CNN
 F 2 "digikey-footprints:TSSOP-8_W3mm" H 2700 2550 60  0001 L CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fina333" H 2700 2650 60  0001 L CNN
@@ -572,10 +77,10 @@ $EndComp
 Text HLabel 1550 1200 0    50   Input ~ 0
 EMG_GND
 $Comp
-L power:GND #PWR014
+L power:GND #PWR020
 U 1 1 6022933A
 P 1850 1300
-F 0 "#PWR014" H 1850 1050 50  0001 C CNN
+F 0 "#PWR020" H 1850 1050 50  0001 C CNN
 F 1 "GND" H 1855 1127 50  0000 C CNN
 F 2 "" H 1850 1300 50  0001 C CNN
 F 3 "" H 1850 1300 50  0001 C CNN
@@ -587,144 +92,11 @@ Wire Wire Line
 Wire Wire Line
 	1550 1200 1850 1200
 $Comp
-L Device:Opamp_Dual_Generic U4
-U 1 1 605F5F9E
-P 6750 1650
-F 0 "U4" H 6750 2017 50  0000 C CNN
-F 1 "TLV9002IPWR" H 6750 1926 50  0000 C CNN
-F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 6750 1650 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/tlv9002.pdf?ts=1612713308610&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTLV9002" H 6750 1650 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/texas-instruments/TLV9002IPWR/9608025?s=N4IgTCBcDaICoBkBqBOADGsBJACgdQCUQBdAXyA" H 6750 1650 50  0001 C CNN "DK_Detail_Page"
-F 5 "296-50283-1-ND" H 6750 1650 50  0001 C CNN " Digi-Key_PN"
-F 6 "Texas Instruments" H 6750 1650 50  0001 C CNN "Manufacturer"
-F 7 "TLV9002IPWR" H 6750 1650 50  0001 C CNN "Manufacturer Product Number"
-F 8 "IC OPAMP GP 2 CIRCUIT 8TSSOP" H 6750 1650 50  0001 C CNN "Description"
-	1    6750 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Opamp_Dual_Generic U4
-U 2 1 605F6CD7
-P 10150 1750
-F 0 "U4" H 10150 2117 50  0000 C CNN
-F 1 "TLV9002IPWR" H 10150 2026 50  0000 C CNN
-F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 10150 1750 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/tlv9002.pdf?ts=1612713308610&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTLV9002" H 10150 1750 50  0001 C CNN
-	2    10150 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 2600 4800 2500
-Wire Wire Line
-	4800 3200 4800 3300
-$Comp
-L power:GND #PWR026
-U 1 1 6060DAB8
-P 4800 3300
-F 0 "#PWR026" H 4800 3050 50  0001 C CNN
-F 1 "GND" H 4805 3127 50  0000 C CNN
-F 2 "" H 4800 3300 50  0001 C CNN
-F 3 "" H 4800 3300 50  0001 C CNN
-	1    4800 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5650 4600 5650 4400
-Wire Wire Line
-	5650 4400 5800 4400
-Wire Wire Line
-	7700 4600 7700 4400
-Wire Wire Line
-	7700 4400 7850 4400
-Wire Wire Line
-	7700 4600 8000 4600
-Wire Wire Line
-	5650 4600 5950 4600
-Wire Wire Line
-	7150 1650 7200 1650
-Wire Wire Line
-	10650 1750 10700 1750
-Wire Wire Line
-	7200 1650 7200 1800
-Connection ~ 7200 1650
-Wire Wire Line
-	7200 1650 7450 1650
-Connection ~ 10700 1750
-Wire Wire Line
-	10700 1750 10900 1750
-Text HLabel 7850 4400 2    50   Output ~ 0
-PASSIVE_LP_OUT
-Text HLabel 5800 4400 2    50   Output ~ 0
-PASSIVE_HP_OUT
-Text HLabel 7300 1800 2    50   Output ~ 0
-ACTIVE_HP_OUT
-Wire Wire Line
-	7200 1800 7300 1800
-Text HLabel 10550 2300 2    50   Output ~ 0
-ACTIVE_LP_OUT
-Wire Wire Line
-	10700 2100 10500 2100
-Wire Wire Line
-	10500 2100 10500 2300
-Wire Wire Line
-	10500 2300 10550 2300
-Wire Wire Line
-	10700 1750 10700 2100
-Text Notes 6100 3350 0    50   ~ 0
-Fc = 1 / (2 * pi * R * C)\n= 1 / (2 * pi * 100kOhm * 0.15uF)\n= 10.61Hz\n
-Text Notes 9400 3450 0    50   ~ 0
-Fc = 1 / (2 * pi * R * C)\n= 1 / (2 * pi * 10kOhm * 0.033uF) \n= 482.29Hz\n
-$Comp
-L Device:C C?
-U 1 1 6054EBBB
-P 5200 2900
-AR Path="/6054EBBB" Ref="C?"  Part="1" 
-AR Path="/606EA892/6054EBBB" Ref="C?"  Part="1" 
-AR Path="/6043E029/6054EBBB" Ref="C8"  Part="1" 
-F 0 "C8" H 5300 2800 50  0000 C CNN
-F 1 "0.1uF" H 5050 2800 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5238 2750 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 5200 2900 50  0001 C CNN
-F 4 "CC0603KRX7R7BB104" H 5200 2900 50  0001 C CNN "Manufacturer Product Number"
-F 5 "X7R" H 5200 2900 50  0001 C CNN "Temperature"
-F 6 "±10%" H 5350 3000 50  0000 C CNN "Tolerance"
-F 7 "16V" H 5200 2900 50  0001 C CNN "Rated Voltage"
-F 8 "0603" H 5050 3000 50  0000 C CNN "Package Size"
-F 9 "CAP CER 0.1UF 16V X7R 0603" H 5200 2900 50  0001 C CNN "Description"
-F 10 "Yageo" H 5200 2900 50  0001 C CNN "Supplier"
-F 11 "Yageo" H 5200 2900 50  0001 C CNN "Manufacturer"
-F 12 "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB104/302822" H 5200 2900 50  0001 C CNN "Digikey"
-	1    5200 2900
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR028
-U 1 1 6054EBC1
-P 5200 3300
-F 0 "#PWR028" H 5200 3050 50  0001 C CNN
-F 1 "GND" H 5205 3127 50  0000 C CNN
-F 2 "" H 5200 3300 50  0001 C CNN
-F 3 "" H 5200 3300 50  0001 C CNN
-	1    5200 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Opamp_Dual_Generic U4
-U 3 1 605F7A5B
-P 4900 2900
-F 0 "U4" H 4550 2900 50  0000 L CNN
-F 1 "TLV9002IPWR" H 4200 2800 50  0000 L CNN
-F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 4900 2900 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/tlv9002.pdf?ts=1612713308610&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTLV9002" H 4900 2900 50  0001 C CNN
-	3    4900 2900
-	1    0    0    -1  
-$EndComp
-$Comp
 L dk_Trimmer-Potentiometers:TC33X-2-103E POT1
 U 1 1 603F949D
 P 1550 2750
 F 0 "POT1" V 1700 3050 60  0000 R CNN
-F 1 "TC33X-2-102E" V 1800 3500 60  0000 R CNN
+F 1 "GAIN" V 1800 3025 60  0000 R CNN
 F 2 "digikey-footprints:Trimpot_3.8mmx3.6mm_TC33X-2-103E" H 1750 2950 60  0001 L CNN
 F 3 "https://www.bourns.com/docs/Product-Datasheets/TC33.pdf" H 1750 3050 60  0001 L CNN
 F 4 "TC33X-102ECT-ND" H 1750 3150 60  0001 L CNN "Digi-Key_PN"
@@ -739,17 +111,15 @@ F 12 "Active" H 1750 3950 60  0001 L CNN "Status"
 	1    1550 2750
 	0    1    1    0   
 $EndComp
-Wire Notes Line
-	8700 3900 8700 6550
 Wire Wire Line
 	1850 2750 2100 2750
 Wire Wire Line
 	1550 2450 1550 2550
 $Comp
-L power:GND #PWR011
+L power:GND #PWR017
 U 1 1 6059D5A3
 P 1550 3100
-F 0 "#PWR011" H 1550 2850 50  0001 C CNN
+F 0 "#PWR017" H 1550 2850 50  0001 C CNN
 F 1 "GND" H 1555 2927 50  0000 C CNN
 F 2 "" H 1550 3100 50  0001 C CNN
 F 3 "" H 1550 3100 50  0001 C CNN
@@ -758,111 +128,8 @@ F 3 "" H 1550 3100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1550 2950 1550 3050
-Text Label 6200 1550 0    50   ~ 0
-HP_2_+
-Text Label 5600 1100 3    50   ~ 0
-HP_2_MID
-Text Label 9100 1200 3    50   ~ 0
-LP_2_MID
-Text Label 9400 1850 0    50   ~ 0
-LP_2_+
-Wire Wire Line
-	5200 3050 5200 3300
-Wire Wire Line
-	5200 2500 5200 2750
-Text HLabel 3600 6700 2    50   Output ~ 0
-RAW_EMG
 Text Label 3300 2550 2    50   ~ 0
 EMG_INSTR
-$Comp
-L Connector_Generic:Conn_02x08_Odd_Even J1
-U 1 1 604D517C
-P 9900 5200
-F 0 "J1" H 9950 5717 50  0000 C CNN
-F 1 "Conn_02x08_Row_Letter_Last" H 9950 5626 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 9900 5200 50  0001 C CNN
-F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/67996.pdf" H 9900 5200 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/amphenol-icc-fci/67996-416HLF/1878538" H 9900 5200 50  0001 C CNN "DK_Detail_Page"
-F 5 "609-3220-ND" H 9900 5200 50  0001 C CNN "Digi-key_PN"
-F 6 "Amphenol ICC (FCI)" H 9900 5200 50  0001 C CNN "Manufacturer"
-F 7 "67996-416HLF" H 9900 5200 50  0001 C CNN "Manufacturer Product Number"
-F 8 "CONN HEADER VERT 16POS 2.54MM" H 9900 5200 50  0001 C CNN "Description"
-	1    9900 5200
-	1    0    0    -1  
-$EndComp
-Text Label 8950 5500 0    50   ~ 0
-LP_2
-Text Label 8950 5600 0    50   ~ 0
-LP_1
-Text HLabel 10350 5600 2    50   Output ~ 0
-EMG_OUT
-Wire Wire Line
-	10200 5500 10300 5500
-Wire Wire Line
-	10200 5600 10300 5600
-Wire Wire Line
-	10200 5400 10300 5400
-Wire Wire Line
-	10200 5300 10300 5300
-Wire Wire Line
-	10300 5300 10300 5400
-Connection ~ 10300 5400
-Wire Wire Line
-	10300 5400 10750 5400
-Wire Wire Line
-	10300 5500 10300 5600
-Wire Wire Line
-	10300 5600 10350 5600
-Connection ~ 10300 5600
-Text Label 8950 5300 0    50   ~ 0
-FIRST_ORDER_HP
-Text Label 8950 5400 0    50   ~ 0
-SECOND_ORDER_HP
-Wire Wire Line
-	9700 5300 8950 5300
-Wire Wire Line
-	8950 5400 9700 5400
-Wire Wire Line
-	8950 5500 9700 5500
-Wire Wire Line
-	8950 5600 9700 5600
-Text Label 10750 5200 2    50   ~ 0
-HP
-Wire Wire Line
-	10300 5200 10750 5200
-Wire Wire Line
-	10200 5200 10300 5200
-Connection ~ 10300 5200
-Wire Wire Line
-	10200 5100 10300 5100
-Wire Wire Line
-	10300 5100 10300 5200
-Wire Wire Line
-	10200 4900 10300 4900
-Wire Wire Line
-	10300 4900 10300 5000
-Connection ~ 10300 5100
-Wire Wire Line
-	10200 5000 10300 5000
-Connection ~ 10300 5000
-Wire Wire Line
-	10300 5000 10300 5100
-Text Label 8950 5100 0    50   ~ 0
-HP_1
-Text Label 8950 5200 0    50   ~ 0
-HP_2
-Text Label 8950 4900 0    50   ~ 0
-FIRST_ORDER_LP
-Text Label 8950 5000 0    50   ~ 0
-SECOND_ORDER_LP
-Wire Wire Line
-	9700 5000 8950 5000
-Wire Wire Line
-	8950 4900 9700 4900
-Wire Wire Line
-	8950 5100 9700 5100
-Wire Wire Line
-	8950 5200 9700 5200
 Wire Wire Line
 	1100 7000 800  7000
 Wire Wire Line
@@ -872,10 +139,10 @@ Wire Wire Line
 Wire Wire Line
 	1300 6600 1300 6500
 $Comp
-L power:+5V #PWR09
+L power:+5V #PWR016
 U 1 1 60631858
 P 1300 6500
-F 0 "#PWR09" H 1300 6350 50  0001 C CNN
+F 0 "#PWR016" H 1300 6350 50  0001 C CNN
 F 1 "+5V" H 1315 6673 50  0000 C CNN
 F 2 "" H 1300 6500 50  0001 C CNN
 F 3 "" H 1300 6500 50  0001 C CNN
@@ -891,10 +158,10 @@ Wire Wire Line
 Wire Wire Line
 	2850 5150 2850 5050
 $Comp
-L power:+5V #PWR020
+L power:+5V #PWR025
 U 1 1 6064E9B8
 P 2850 5050
-F 0 "#PWR020" H 2850 4900 50  0001 C CNN
+F 0 "#PWR025" H 2850 4900 50  0001 C CNN
 F 1 "+5V" H 2865 5223 50  0000 C CNN
 F 2 "" H 2850 5050 50  0001 C CNN
 F 3 "" H 2850 5050 50  0001 C CNN
@@ -908,28 +175,28 @@ Wire Wire Line
 Wire Wire Line
 	1800 6900 1700 6900
 $Comp
-L Device:R_US R6
+L Device:R_US R8
 U 1 1 6066F11F
 P 2075 6900
-F 0 "R6" V 1975 6800 50  0000 C CNN
-F 1 "39k" V 1975 7000 50  0000 C CNN
+F 0 "R8" V 2000 6750 50  0000 C CNN
+F 1 "39k" V 2000 7050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2115 6890 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 2075 6900 50  0001 C CNN
 F 4 "A129707CT-ND" V 2075 6900 50  0001 C CNN "Digi-Key_PN"
 F 5 "TE Connectivity Passive Product" V 2075 6900 50  0001 C CNN "Manufacturer"
 F 6 "CRGCQ0603F39K" V 2075 6900 50  0001 C CNN "MPN"
 F 7 "CRGCQ 0603 39K 1%" V 2075 6900 50  0001 C CNN "Description"
-F 8 "0603" V 2175 7000 50  0000 C CNN "Supplier Device Package"
-F 9 "±1%" V 2175 6800 50  0000 C CNN "Tolerance"
+F 8 "0603" V 2150 7075 50  0000 C CNN "Supplier Device Package"
+F 9 "±1%" V 2150 6750 50  0000 C CNN "Tolerance"
 	1    2075 6900
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C5
+L Device:C C11
 U 1 1 6067932B
 P 2900 6550
-F 0 "C5" V 2800 6400 50  0000 C CNN
-F 1 "4700pF" V 2800 6700 50  0000 C CNN
+F 0 "C11" V 2850 6400 50  0000 C CNN
+F 1 "4700pF" V 2850 6775 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2938 6400 50  0001 C CNN
 F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C430J5GACTU.pdf" H 2900 6550 50  0001 C CNN
 F 4 "445-6912-1-ND" V 2900 6550 50  0001 C CNN "Digi-Key_PN"
@@ -937,16 +204,17 @@ F 5 "https://www.digikey.com/en/products/detail/tdk-corporation/CGA3E2C0G1H472J0
 F 6 "TDK Corporation" V 2900 6550 50  0001 C CNN "Manufacturer"
 F 7 "CGA3E2C0G1H472J080AA" V 2900 6550 50  0001 C CNN "MPN"
 F 8 "CAP CER 4700PF 50V C0G 0603" V 2900 6550 50  0001 C CNN "Description"
-F 9 "±5%" V 2950 6400 50  0000 C CNN "Tolerance"
+F 9 "±5%" V 2950 6400 50  0001 C CNN "Tolerance"
 F 10 "0603" V 2950 6700 50  0000 C CNN "Package / Case"
+F 11 "C0G" V 2950 6400 50  0000 C CNN "Temperature Coefficient"
 	1    2900 6550
 	0    1    1    0   
 $EndComp
 $Comp
-L Amplifier_Operational:OPA376xxD U3
+L Amplifier_Operational:OPA376xxD U4
 U 1 1 605E837E
 P 2950 5450
-F 0 "U3" H 2650 5700 50  0000 L CNN
+F 0 "U4" H 2650 5700 50  0000 L CNN
 F 1 "OPA376xxD" H 3000 5300 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2850 5250 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa376.pdf" H 3100 5600 50  0001 C CNN
@@ -957,10 +225,10 @@ F 6 "Texas Instruments" H 2950 5450 50  0001 C CNN "Manufacturer"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR021
+L power:GND #PWR026
 U 1 1 606C52B7
 P 2850 5850
-F 0 "#PWR021" H 2850 5600 50  0001 C CNN
+F 0 "#PWR026" H 2850 5600 50  0001 C CNN
 F 1 "GND" H 2855 5677 50  0000 C CNN
 F 2 "" H 2850 5850 50  0001 C CNN
 F 3 "" H 2850 5850 50  0001 C CNN
@@ -975,12 +243,11 @@ Wire Wire Line
 	3450 6900 3550 6900
 Wire Wire Line
 	3550 7000 3550 6900
-Connection ~ 3550 6900
 $Comp
-L power:GND #PWR024
+L power:GND #PWR029
 U 1 1 607390A6
 P 3550 7400
-F 0 "#PWR024" H 3550 7150 50  0001 C CNN
+F 0 "#PWR029" H 3550 7150 50  0001 C CNN
 F 1 "GND" H 3555 7227 50  0000 C CNN
 F 2 "" H 3550 7400 50  0001 C CNN
 F 3 "" H 3550 7400 50  0001 C CNN
@@ -990,10 +257,10 @@ $EndComp
 Wire Wire Line
 	3550 7300 3550 7400
 $Comp
-L power:+5V #PWR05
+L power:+5V #PWR012
 U 1 1 6074FFA4
 P 700 5100
-F 0 "#PWR05" H 700 4950 50  0001 C CNN
+F 0 "#PWR012" H 700 4950 50  0001 C CNN
 F 1 "+5V" H 715 5273 50  0000 C CNN
 F 2 "" H 700 5100 50  0001 C CNN
 F 3 "" H 700 5100 50  0001 C CNN
@@ -1001,23 +268,27 @@ F 3 "" H 700 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R1
+L Device:R_US R5
 U 1 1 6075022B
 P 1175 5350
-F 0 "R1" V 1075 5250 50  0000 C CNN
+F 0 "R5" V 1075 5250 50  0000 C CNN
 F 1 "36.5k" V 1075 5450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1215 5340 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 1175 5350 50  0001 C CNN
 F 4 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0736K5L/727181" V 1175 5350 50  0001 C CNN "DK_Detail_Page"
-F 5 "0603" V 1275 5450 50  0000 C CNN "Supplier Device Package"
+F 5 "0603" V 1250 5525 50  0000 C CNN "Supplier Device Package"
+F 6 "311-36.5KHRCT-ND" V 1175 5350 50  0001 C CNN "Digi-Key_PN"
+F 7 "RC0603FR-0736K5L" V 1175 5350 50  0001 C CNN "MPN"
+F 8 "RES SMD 36.5K OHM 1% 1/10W 0603" V 1175 5350 50  0001 C CNN "Description"
+F 9 "±1%" V 1250 5200 50  0000 C CNN "Tolerance"
 	1    1175 5350
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR015
+L power:GND #PWR021
 U 1 1 6075C4E4
 P 1850 5850
-F 0 "#PWR015" H 1850 5600 50  0001 C CNN
+F 0 "#PWR021" H 1850 5600 50  0001 C CNN
 F 1 "GND" H 1855 5677 50  0000 C CNN
 F 2 "" H 1850 5850 50  0001 C CNN
 F 3 "" H 1850 5850 50  0001 C CNN
@@ -1048,23 +319,13 @@ Text Label 600  6800 0    50   ~ 0
 EMG_INSTR
 Wire Wire Line
 	600  6800 1100 6800
-Text Label 4000 6900 2    50   ~ 0
-EMG_SHIFT
-Wire Wire Line
-	3550 6900 4000 6900
-Text Label 10750 5400 2    50   ~ 0
-EMG_SHIFT
-Wire Wire Line
-	3550 6900 3550 6700
-Wire Wire Line
-	3550 6700 3600 6700
 Wire Wire Line
 	2800 2550 3300 2550
 $Comp
-L Device:R_US R2
+L Device:R_US R4
 U 1 1 6082F0F9
 P 1000 2750
-F 0 "R2" H 1100 2600 50  0000 R CNN
+F 0 "R4" H 1100 2600 50  0000 R CNN
 F 1 "47k" H 1000 2600 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1040 2740 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 1000 2750 50  0001 C CNN
@@ -1115,8 +376,8 @@ U 1 1 60892EC2
 P 1650 5600
 AR Path="/60892EC2" Ref="R?"  Part="1" 
 AR Path="/606EA892/60892EC2" Ref="R?"  Part="1" 
-AR Path="/6043E029/60892EC2" Ref="R5"  Part="1" 
-F 0 "R5" H 1600 5650 50  0000 R CNN
+AR Path="/6043E029/60892EC2" Ref="R7"  Part="1" 
+F 0 "R7" H 1600 5650 50  0000 R CNN
 F 1 "10k" H 1850 5650 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1690 5590 50  0001 C CNN
 F 3 "https://www.seielect.com/catalog/sei-rncp.pdf" H 1650 5600 50  0001 C CNN
@@ -1138,9 +399,9 @@ U 1 1 6089AB06
 P 3550 7150
 AR Path="/6089AB06" Ref="R?"  Part="1" 
 AR Path="/606EA892/6089AB06" Ref="R?"  Part="1" 
-AR Path="/6043E029/6089AB06" Ref="R9"  Part="1" 
-F 0 "R9" H 3500 7300 50  0000 R CNN
-F 1 "10k" H 3700 7300 50  0000 R CNN
+AR Path="/6043E029/6089AB06" Ref="R10"  Part="1" 
+F 0 "R10" H 3500 7300 50  0000 R CNN
+F 1 "10k" H 3750 7300 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3590 7140 50  0001 C CNN
 F 3 "https://www.seielect.com/catalog/sei-rncp.pdf" H 3550 7150 50  0001 C CNN
 F 4 "RNCP0603FTD10K0CT-ND" H 3550 7150 50  0001 C CNN "Digi-Key_PN"
@@ -1151,15 +412,15 @@ F 8 "RES 10K OHM 1% 1/8W 0603" H 3550 7150 50  0001 C CNN "Description"
 F 9 "10 kOhms ±1% 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Anti-Sulfur, Moisture Resistant Thin Film" H 3550 7150 50  0001 C CNN "Detailed Description"
 F 10 "±1%" H 3450 7000 50  0000 C CNN "Tolerance"
 F 11 "0.125W, 1/8W" H 3550 7150 50  0001 C CNN "Power (Watts)"
-F 12 "0603" H 3650 7000 50  0000 C CNN "Package"
+F 12 "0603" H 3675 7000 50  0000 C CNN "Package"
 	1    3550 7150
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR06
+L power:GND #PWR013
 U 1 1 608B63A8
 P 750 2600
-F 0 "#PWR06" H 750 2350 50  0001 C CNN
+F 0 "#PWR013" H 750 2350 50  0001 C CNN
 F 1 "GND" H 755 2427 50  0000 C CNN
 F 2 "" H 750 2600 50  0001 C CNN
 F 3 "" H 750 2600 50  0001 C CNN
@@ -1167,20 +428,18 @@ F 3 "" H 750 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 3200 2700 3200
+	2500 3250 2700 3250
 Wire Wire Line
-	2700 3200 2700 3150
-Wire Wire Line
-	2500 2950 2500 3200
+	2700 3250 2700 3200
 Wire Wire Line
 	750  2350 750  2600
 Wire Wire Line
 	750  2350 1950 2350
 $Comp
-L power:+5V #PWR07
+L power:+5V #PWR014
 U 1 1 608EE299
 P 1050 4200
-F 0 "#PWR07" H 1050 4050 50  0001 C CNN
+F 0 "#PWR014" H 1050 4050 50  0001 C CNN
 F 1 "+5V" H 1065 4373 50  0000 C CNN
 F 2 "" H 1050 4200 50  0001 C CNN
 F 3 "" H 1050 4200 50  0001 C CNN
@@ -1188,33 +447,10 @@ F 3 "" H 1050 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
-U 1 1 608EB2E3
-P 1050 4450
-AR Path="/608EB2E3" Ref="C?"  Part="1" 
-AR Path="/606EA892/608EB2E3" Ref="C?"  Part="1" 
-AR Path="/6043E029/608EB2E3" Ref="C1"  Part="1" 
-F 0 "C1" H 1150 4350 50  0000 C CNN
-F 1 "0.1uF" H 900 4350 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1088 4300 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 1050 4450 50  0001 C CNN
-F 4 "CC0603KRX7R7BB104" H 1050 4450 50  0001 C CNN "Manufacturer Product Number"
-F 5 "X7R" H 1050 4450 50  0001 C CNN "Temperature"
-F 6 "±10%" H 1200 4550 50  0000 C CNN "Tolerance"
-F 7 "16V" H 1050 4450 50  0001 C CNN "Rated Voltage"
-F 8 "0603" H 900 4550 50  0000 C CNN "Package Size"
-F 9 "CAP CER 0.1UF 16V X7R 0603" H 1050 4450 50  0001 C CNN "Description"
-F 10 "Yageo" H 1050 4450 50  0001 C CNN "Supplier"
-F 11 "Yageo" H 1050 4450 50  0001 C CNN "Manufacturer"
-F 12 "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB104/302822" H 1050 4450 50  0001 C CNN "Digikey"
-	1    1050 4450
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+5V #PWR012
+L power:+5V #PWR018
 U 1 1 608EE836
 P 1800 4200
-F 0 "#PWR012" H 1800 4050 50  0001 C CNN
+F 0 "#PWR018" H 1800 4050 50  0001 C CNN
 F 1 "+5V" H 1815 4373 50  0000 C CNN
 F 2 "" H 1800 4200 50  0001 C CNN
 F 3 "" H 1800 4200 50  0001 C CNN
@@ -1227,51 +463,29 @@ U 1 1 608EC034
 P 1800 4450
 AR Path="/608EC034" Ref="C?"  Part="1" 
 AR Path="/606EA892/608EC034" Ref="C?"  Part="1" 
-AR Path="/6043E029/608EC034" Ref="C2"  Part="1" 
-F 0 "C2" H 1900 4350 50  0000 C CNN
+AR Path="/6043E029/608EC034" Ref="C7"  Part="1" 
+F 0 "C7" H 1900 4350 50  0000 C CNN
 F 1 "0.1uF" H 1650 4350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1838 4300 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 1800 4450 50  0001 C CNN
-F 4 "CC0603KRX7R7BB104" H 1800 4450 50  0001 C CNN "Manufacturer Product Number"
-F 5 "X7R" H 1800 4450 50  0001 C CNN "Temperature"
-F 6 "±10%" H 1950 4550 50  0000 C CNN "Tolerance"
+F 4 "CC0603KRX7R7BB104" H 1800 4450 50  0001 C CNN "MPN"
+F 5 "X7R" H 1950 4550 50  0000 C CNN "Temperature"
+F 6 "±10%" H 1950 4550 50  0001 C CNN "Tolerance"
 F 7 "16V" H 1800 4450 50  0001 C CNN "Rated Voltage"
 F 8 "0603" H 1650 4550 50  0000 C CNN "Package Size"
 F 9 "CAP CER 0.1UF 16V X7R 0603" H 1800 4450 50  0001 C CNN "Description"
 F 10 "Yageo" H 1800 4450 50  0001 C CNN "Supplier"
 F 11 "Yageo" H 1800 4450 50  0001 C CNN "Manufacturer"
 F 12 "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB104/302822" H 1800 4450 50  0001 C CNN "Digikey"
+F 13 "311-1088-1-ND" H 1800 4450 50  0001 C CNN "Digi-Key_PN"
 	1    1800 4450
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C?
-U 1 1 60908E2F
-P 2500 4450
-AR Path="/60908E2F" Ref="C?"  Part="1" 
-AR Path="/606EA892/60908E2F" Ref="C?"  Part="1" 
-AR Path="/6043E029/60908E2F" Ref="C4"  Part="1" 
-F 0 "C4" H 2600 4350 50  0000 C CNN
-F 1 "0.1uF" H 2350 4350 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2538 4300 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 2500 4450 50  0001 C CNN
-F 4 "CC0603KRX7R7BB104" H 2500 4450 50  0001 C CNN "Manufacturer Product Number"
-F 5 "X7R" H 2500 4450 50  0001 C CNN "Temperature"
-F 6 "±10%" H 2650 4550 50  0000 C CNN "Tolerance"
-F 7 "16V" H 2500 4450 50  0001 C CNN "Rated Voltage"
-F 8 "0603" H 2350 4550 50  0000 C CNN "Package Size"
-F 9 "CAP CER 0.1UF 16V X7R 0603" H 2500 4450 50  0001 C CNN "Description"
-F 10 "Yageo" H 2500 4450 50  0001 C CNN "Supplier"
-F 11 "Yageo" H 2500 4450 50  0001 C CNN "Manufacturer"
-F 12 "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB104/302822" H 2500 4450 50  0001 C CNN "Digikey"
-	1    2500 4450
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR018
+L power:GND #PWR024
 U 1 1 6090A5F5
 P 2500 4700
-F 0 "#PWR018" H 2500 4450 50  0001 C CNN
+F 0 "#PWR024" H 2500 4450 50  0001 C CNN
 F 1 "GND" H 2505 4527 50  0000 C CNN
 F 2 "" H 2500 4700 50  0001 C CNN
 F 3 "" H 2500 4700 50  0001 C CNN
@@ -1279,10 +493,10 @@ F 3 "" H 2500 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR013
+L power:GND #PWR019
 U 1 1 6090A8DC
 P 1800 4700
-F 0 "#PWR013" H 1800 4450 50  0001 C CNN
+F 0 "#PWR019" H 1800 4450 50  0001 C CNN
 F 1 "GND" H 1805 4527 50  0000 C CNN
 F 2 "" H 1800 4700 50  0001 C CNN
 F 3 "" H 1800 4700 50  0001 C CNN
@@ -1290,10 +504,10 @@ F 3 "" H 1800 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR08
+L power:GND #PWR015
 U 1 1 6090AB3A
 P 1050 4700
-F 0 "#PWR08" H 1050 4450 50  0001 C CNN
+F 0 "#PWR015" H 1050 4450 50  0001 C CNN
 F 1 "GND" H 1055 4527 50  0000 C CNN
 F 2 "" H 1050 4700 50  0001 C CNN
 F 3 "" H 1050 4700 50  0001 C CNN
@@ -1313,26 +527,26 @@ Wire Wire Line
 Wire Wire Line
 	2500 4200 2500 4300
 $Comp
-L Device:C C3
+L Device:C C8
 U 1 1 60AA48D5
 P 2050 5600
-F 0 "C3" H 2200 5500 50  0000 R CNN
+F 0 "C8" H 2200 5500 50  0000 R CNN
 F 1 "1uF" H 2000 5500 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2088 5450 50  0001 C CNN
 F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A105KO8NNNC.jsp" H 2050 5600 50  0001 C CNN
 F 4 "1276-1034-1-ND" H 2050 5600 50  0001 C CNN "Digi-Key_PN"
-F 5 "±10%" H 2200 5700 50  0000 C CNN "Tolerance"
-F 6 "X5R" H 2050 5600 50  0001 C CNN " Temperature Coefficient"
+F 5 "±10%" H 2200 5700 50  0001 C CNN "Tolerance"
+F 6 "X5R" H 2150 5700 50  0000 C CNN " Temperature Coefficient"
 F 7 "0603" H 1950 5700 50  0000 C CNN "Package"
 	1    2050 5600
 	-1   0    0    1   
 $EndComp
 Connection ~ 1650 5350
 $Comp
-L Device:R_US R3
+L Device:R_US R6
 U 1 1 60ACFCB9
 P 1300 2750
-F 0 "R3" H 1400 2600 50  0000 R CNN
+F 0 "R6" H 1400 2600 50  0000 R CNN
 F 1 "47k" H 1300 2600 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1340 2740 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English" H 1300 2750 50  0001 C CNN
@@ -1340,20 +554,20 @@ F 4 "A129708CT-ND" H 1300 2750 50  0001 C CNN "Digi-Key_PN"
 F 5 "TE Connectivity Passive Product" H 1300 2750 50  0001 C CNN "Manufacturer"
 F 6 "CRGCQ0603F47K" H 1300 2750 50  0001 C CNN "MPN"
 F 7 "CRGCQ 0603 47K 1%" H 1300 2750 50  0001 C CNN "Description"
-F 8 "±1%" V 1350 2950 50  0000 C CNN "Tolerance"
-F 9 "0603" H 1200 2900 50  0000 C CNN "Package"
+F 8 "±1%" H 1400 2900 50  0000 C CNN "Tolerance"
+F 9 "0603" V 1250 2950 50  0000 C CNN "Package"
 	1    1300 2750
 	-1   0    0    1   
 $EndComp
-Text Notes 2775 4600 0    50   ~ 0
+Text Notes 2900 4700 0    50   ~ 0
 INVERTING DUAL-SUPPLY TO \nSINGLE-SUPPLY AMPLIFIER CIRCUIT\n\nDesign referenced from \nTI's Analog Engineer's Circuit Cookbook: \nAmplifiers (Rev. A)\n\nPage 162\n
 $Comp
-L FANTM_parts:OPA140DGK U1
+L FANTM_parts:OPA140DGK U?
 U 1 1 60650A62
 P 1400 6900
-AR Path="/60650A62" Ref="U1"  Part="1" 
-AR Path="/6043E029/60650A62" Ref="U1"  Part="1" 
-F 0 "U1" H 1100 7150 50  0000 L CNN
+AR Path="/60650A62" Ref="U?"  Part="1" 
+AR Path="/6043E029/60650A62" Ref="U2"  Part="1" 
+F 0 "U2" H 1100 7150 50  0000 L CNN
 F 1 "OPA140DGK" H 1400 7050 50  0000 L CNN
 F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 1100 7650 50  0001 C CNN
 F 3 "~" H 1400 6900 50  0001 C CNN
@@ -1361,10 +575,10 @@ F 3 "~" H 1400 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0101
+L power:+5V #PWR023
 U 1 1 606CF7E1
 P 2500 2050
-F 0 "#PWR0101" H 2500 1900 50  0001 C CNN
+F 0 "#PWR023" H 2500 1900 50  0001 C CNN
 F 1 "+5V" H 2515 2223 50  0000 C CNN
 F 2 "" H 2500 2050 50  0001 C CNN
 F 3 "" H 2500 2050 50  0001 C CNN
@@ -1372,36 +586,14 @@ F 3 "" H 2500 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0102
+L power:+5V #PWR027
 U 1 1 606D0348
 P 2950 800
-F 0 "#PWR0102" H 2950 650 50  0001 C CNN
+F 0 "#PWR027" H 2950 650 50  0001 C CNN
 F 1 "+5V" H 2965 973 50  0000 C CNN
 F 2 "" H 2950 800 50  0001 C CNN
 F 3 "" H 2950 800 50  0001 C CNN
 	1    2950 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0103
-U 1 1 606D0803
-P 4800 2500
-F 0 "#PWR0103" H 4800 2350 50  0001 C CNN
-F 1 "+5V" H 4815 2673 50  0000 C CNN
-F 2 "" H 4800 2500 50  0001 C CNN
-F 3 "" H 4800 2500 50  0001 C CNN
-	1    4800 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0104
-U 1 1 606D0DD1
-P 5200 2500
-F 0 "#PWR0104" H 5200 2350 50  0001 C CNN
-F 1 "+5V" H 5215 2673 50  0000 C CNN
-F 2 "" H 5200 2500 50  0001 C CNN
-F 3 "" H 5200 2500 50  0001 C CNN
-	1    5200 2500
 	1    0    0    -1  
 $EndComp
 $Bitmap
@@ -2877,14 +2069,20 @@ FC FC 7C 1F 1F 9F 77 32 80 31 FE FA EB AF E1 42 8D C7 8F 1F 3F 78 F0 40 22 91 B8
 EndData
 $EndBitmap
 $Comp
-L Device:R_US R?
+L Device:R_US R9
 U 1 1 606EFC85
 P 2900 6900
-F 0 "R?" V 2800 6800 50  0000 C CNN
+F 0 "R9" V 2800 6800 50  0000 C CNN
 F 1 "35.7k" V 2800 7000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2940 6890 50  0001 C CNN
 F 3 "https://www.seielect.com/catalog/sei-packaging.pdf" H 2900 6900 50  0001 C CNN
 F 4 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT35K7/1760766" V 2900 6900 50  0001 C CNN "DK_Detail_Page"
+F 5 "RMCF0603FT35K7CT-ND" V 2900 6900 50  0001 C CNN "Digi-Key_PN"
+F 6 "Stackpole Electronics Inc" V 2900 6900 50  0001 C CNN "Manufacturer"
+F 7 "RMCF0603FT35K7" V 2900 6900 50  0001 C CNN "MPN"
+F 8 "RES 35.7K OHM 1% 1/10W 0603" V 2900 6900 50  0001 C CNN "Description"
+F 9 "±1%" V 2975 6725 50  0000 C CNN "Tolerance"
+F 10 "0603" V 2975 7100 50  0000 C CNN "Package"
 	1    2900 6900
 	0    1    1    0   
 $EndComp
@@ -2917,15 +2115,15 @@ Connection ~ 1800 6900
 Wire Wire Line
 	2225 6900 2350 6900
 Connection ~ 2350 6900
-Text GLabel 2700 3150 1    50   UnSpc ~ 0
+Text GLabel 2700 3200 1    50   UnSpc ~ 0
 -4V5
 Text GLabel 1450 7250 1    50   UnSpc ~ 0
 -4V5
 $Comp
-L Device:C C?
+L Device:C C9
 U 1 1 606EBEC2
 P 2050 6225
-F 0 "C?" H 2125 6125 50  0000 C CNN
+F 0 "C9" H 2125 6125 50  0000 C CNN
 F 1 "4700pF" H 1900 6125 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2088 6075 50  0001 C CNN
 F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C430J5GACTU.pdf" H 2050 6225 50  0001 C CNN
@@ -2934,16 +2132,17 @@ F 5 "https://www.digikey.com/en/products/detail/tdk-corporation/CGA3E2C0G1H472J0
 F 6 "TDK Corporation" V 2050 6225 50  0001 C CNN "Manufacturer"
 F 7 "CGA3E2C0G1H472J080AA" V 2050 6225 50  0001 C CNN "MPN"
 F 8 "CAP CER 4700PF 50V C0G 0603" V 2050 6225 50  0001 C CNN "Description"
-F 9 "±5%" H 1950 6325 50  0000 C CNN "Tolerance"
-F 10 "0603" H 2175 6325 50  0000 C CNN "Package / Case"
+F 9 "±5%" H 1950 6325 50  0001 C CNN "Tolerance"
+F 10 "0603" H 1950 6325 50  0000 C CNN "Package / Case"
+F 11 "C0G" H 2150 6325 50  0000 C CNN "Temperature Coefficient"
 	1    2050 6225
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR022
 U 1 1 606ECB9C
 P 2050 6500
-F 0 "#PWR?" H 2050 6250 50  0001 C CNN
+F 0 "#PWR022" H 2050 6250 50  0001 C CNN
 F 1 "GND" H 2055 6327 50  0000 C CNN
 F 2 "" H 2050 6500 50  0001 C CNN
 F 3 "" H 2050 6500 50  0001 C CNN
@@ -2961,4 +2160,126 @@ Text GLabel 2500 4200 1    50   UnSpc ~ 0
 -4V5
 Wire Wire Line
 	2050 5875 2350 5875
+Wire Wire Line
+	3550 6900 3750 6900
+Connection ~ 3550 6900
+Text HLabel 3750 6900 2    50   Output ~ 0
+EMG_OUT
+Text Notes 3550 5275 0    50   ~ 0
+Fc (-3dB) is 696.96Hz\nfor this low pass filter.\n
+$Comp
+L Device:C C?
+U 1 1 6079AFFD
+P 1050 4450
+AR Path="/6079AFFD" Ref="C?"  Part="1" 
+AR Path="/606EA892/6079AFFD" Ref="C?"  Part="1" 
+AR Path="/6043E029/6079AFFD" Ref="C6"  Part="1" 
+F 0 "C6" H 1150 4350 50  0000 C CNN
+F 1 "0.1uF" H 900 4350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1088 4300 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 1050 4450 50  0001 C CNN
+F 4 "CC0603KRX7R7BB104" H 1050 4450 50  0001 C CNN "MPN"
+F 5 "X7R" H 1200 4550 50  0000 C CNN "Temperature"
+F 6 "±10%" H 1200 4550 50  0001 C CNN "Tolerance"
+F 7 "16V" H 1050 4450 50  0001 C CNN "Rated Voltage"
+F 8 "0603" H 900 4550 50  0000 C CNN "Package Size"
+F 9 "CAP CER 0.1UF 16V X7R 0603" H 1050 4450 50  0001 C CNN "Description"
+F 10 "Yageo" H 1050 4450 50  0001 C CNN "Supplier"
+F 11 "Yageo" H 1050 4450 50  0001 C CNN "Manufacturer"
+F 12 "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB104/302822" H 1050 4450 50  0001 C CNN "Digikey"
+F 13 "311-1088-1-ND" H 1050 4450 50  0001 C CNN "Digi-Key_PN"
+	1    1050 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6079BD40
+P 2500 4450
+AR Path="/6079BD40" Ref="C?"  Part="1" 
+AR Path="/606EA892/6079BD40" Ref="C?"  Part="1" 
+AR Path="/6043E029/6079BD40" Ref="C10"  Part="1" 
+F 0 "C10" H 2600 4350 50  0000 C CNN
+F 1 "0.1uF" H 2350 4350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2538 4300 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 2500 4450 50  0001 C CNN
+F 4 "CC0603KRX7R7BB104" H 2500 4450 50  0001 C CNN "MPN"
+F 5 "X7R" H 2650 4550 50  0000 C CNN "Temperature"
+F 6 "±10%" H 2650 4550 50  0001 C CNN "Tolerance"
+F 7 "16V" H 2500 4450 50  0001 C CNN "Rated Voltage"
+F 8 "0603" H 2350 4550 50  0000 C CNN "Package Size"
+F 9 "CAP CER 0.1UF 16V X7R 0603" H 2500 4450 50  0001 C CNN "Description"
+F 10 "Yageo" H 2500 4450 50  0001 C CNN "Supplier"
+F 11 "Yageo" H 2500 4450 50  0001 C CNN "Manufacturer"
+F 12 "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB104/302822" H 2500 4450 50  0001 C CNN "Digikey"
+F 13 "311-1088-1-ND" H 2500 4450 50  0001 C CNN "Digi-Key_PN"
+	1    2500 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6079CDBC
+P 2950 1050
+AR Path="/6079CDBC" Ref="C?"  Part="1" 
+AR Path="/606EA892/6079CDBC" Ref="C?"  Part="1" 
+AR Path="/6043E029/6079CDBC" Ref="C12"  Part="1" 
+F 0 "C12" H 3050 950 50  0000 C CNN
+F 1 "0.1uF" H 2800 950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2988 900 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 2950 1050 50  0001 C CNN
+F 4 "CC0603KRX7R7BB104" H 2950 1050 50  0001 C CNN "MPN"
+F 5 "X7R" H 3100 1150 50  0000 C CNN "Temperature"
+F 6 "±10%" H 3100 1150 50  0001 C CNN "Tolerance"
+F 7 "16V" H 2950 1050 50  0001 C CNN "Rated Voltage"
+F 8 "0603" H 2800 1150 50  0000 C CNN "Package Size"
+F 9 "CAP CER 0.1UF 16V X7R 0603" H 2950 1050 50  0001 C CNN "Description"
+F 10 "Yageo" H 2950 1050 50  0001 C CNN "Supplier"
+F 11 "Yageo" H 2950 1050 50  0001 C CNN "Manufacturer"
+F 12 "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB104/302822" H 2950 1050 50  0001 C CNN "Digikey"
+F 13 "311-1088-1-ND" H 2950 1050 50  0001 C CNN "Digi-Key_PN"
+	1    2950 1050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2500 2950 2500 3250
+$Comp
+L power:GND #PWR0101
+U 1 1 607D61E4
+P 3500 1300
+F 0 "#PWR0101" H 3500 1050 50  0001 C CNN
+F 1 "GND" H 3505 1127 50  0000 C CNN
+F 2 "" H 3500 1300 50  0001 C CNN
+F 3 "" H 3500 1300 50  0001 C CNN
+	1    3500 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1200 3500 1300
+Wire Wire Line
+	3500 800  3500 900 
+Text GLabel 3500 800  1    50   UnSpc ~ 0
+-4V5
+$Comp
+L Device:C C?
+U 1 1 607D61F7
+P 3500 1050
+AR Path="/607D61F7" Ref="C?"  Part="1" 
+AR Path="/606EA892/607D61F7" Ref="C?"  Part="1" 
+AR Path="/6043E029/607D61F7" Ref="C13"  Part="1" 
+F 0 "C13" H 3600 950 50  0000 C CNN
+F 1 "0.1uF" H 3350 950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3538 900 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 3500 1050 50  0001 C CNN
+F 4 "CC0603KRX7R7BB104" H 3500 1050 50  0001 C CNN "MPN"
+F 5 "X7R" H 3650 1150 50  0000 C CNN "Temperature"
+F 6 "±10%" H 3650 1150 50  0001 C CNN "Tolerance"
+F 7 "16V" H 3500 1050 50  0001 C CNN "Rated Voltage"
+F 8 "0603" H 3350 1150 50  0000 C CNN "Package Size"
+F 9 "CAP CER 0.1UF 16V X7R 0603" H 3500 1050 50  0001 C CNN "Description"
+F 10 "Yageo" H 3500 1050 50  0001 C CNN "Supplier"
+F 11 "Yageo" H 3500 1050 50  0001 C CNN "Manufacturer"
+F 12 "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB104/302822" H 3500 1050 50  0001 C CNN "Digikey"
+F 13 "311-1088-1-ND" H 3500 1050 50  0001 C CNN "Digi-Key_PN"
+	1    3500 1050
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

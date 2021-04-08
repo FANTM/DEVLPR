@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 2 3
 Title "DEVLPR"
 Date "2021-03-31"
 Rev "dev.a.1"
@@ -18,8 +18,8 @@ L Regulator_SwitchedCapacitor:LM27761 U?
 U 1 1 60600180
 P 2650 1800
 AR Path="/6043E029/60600180" Ref="U?"  Part="1" 
-AR Path="/605EF1AE/60600180" Ref="U5"  Part="1" 
-F 0 "U5" H 2350 2250 50  0000 C CNN
+AR Path="/605EF1AE/60600180" Ref="U1"  Part="1" 
+F 0 "U1" H 2350 2250 50  0000 C CNN
 F 1 "LM27761" H 2400 1350 50  0000 C CNN
 F 2 "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm" H 2800 1300 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm27761.pdf" H 5150 1400 50  0001 C CNN
@@ -37,8 +37,8 @@ L power:GND #PWR?
 U 1 1 60600197
 P 2650 2525
 AR Path="/6043E029/60600197" Ref="#PWR?"  Part="1" 
-AR Path="/605EF1AE/60600197" Ref="#PWR035"  Part="1" 
-F 0 "#PWR035" H 2650 2275 50  0001 C CNN
+AR Path="/605EF1AE/60600197" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 2650 2275 50  0001 C CNN
 F 1 "GND" H 2655 2352 50  0000 C CNN
 F 2 "" H 2650 2525 50  0001 C CNN
 F 3 "" H 2650 2525 50  0001 C CNN
@@ -50,8 +50,8 @@ L power:GND #PWR?
 U 1 1 6060019D
 P 3325 2525
 AR Path="/6043E029/6060019D" Ref="#PWR?"  Part="1" 
-AR Path="/605EF1AE/6060019D" Ref="#PWR036"  Part="1" 
-F 0 "#PWR036" H 3325 2275 50  0001 C CNN
+AR Path="/605EF1AE/6060019D" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 3325 2275 50  0001 C CNN
 F 1 "GND" H 3330 2352 50  0000 C CNN
 F 2 "" H 3325 2525 50  0001 C CNN
 F 3 "" H 3325 2525 50  0001 C CNN
@@ -63,8 +63,8 @@ L power:GND #PWR?
 U 1 1 606001A7
 P 4400 2100
 AR Path="/6043E029/606001A7" Ref="#PWR?"  Part="1" 
-AR Path="/605EF1AE/606001A7" Ref="#PWR039"  Part="1" 
-F 0 "#PWR039" H 4400 1850 50  0001 C CNN
+AR Path="/605EF1AE/606001A7" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 4400 1850 50  0001 C CNN
 F 1 "GND" H 4405 1927 50  0000 C CNN
 F 2 "" H 4400 2100 50  0001 C CNN
 F 3 "" H 4400 2100 50  0001 C CNN
@@ -78,14 +78,14 @@ L Device:C C?
 U 1 1 606001C2
 P 2050 1950
 AR Path="/6043E029/606001C2" Ref="C?"  Part="1" 
-AR Path="/605EF1AE/606001C2" Ref="C15"  Part="1" 
-F 0 "C15" H 2225 1850 50  0000 R CNN
+AR Path="/605EF1AE/606001C2" Ref="C2"  Part="1" 
+F 0 "C2" H 2225 1850 50  0000 R CNN
 F 1 "1uF" H 2025 1850 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2088 1800 50  0001 C CNN
 F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A105KO8NNNC.jsp" H 2050 1950 50  0001 C CNN
 F 4 "1276-1034-1-ND" H 2050 1950 50  0001 C CNN "Digi-Key_PN"
-F 5 "±10%" H 2200 2050 50  0000 C CNN "Tolerance"
-F 6 "X5R" H 2050 1950 50  0001 C CNN " Temperature Coefficient"
+F 5 "±10%" H 2200 2050 50  0001 C CNN "Tolerance"
+F 6 "X5R" H 2150 2050 50  0000 C CNN " Temperature Coefficient"
 F 7 "0603" H 1950 2050 50  0000 C CNN "Package"
 	1    2050 1950
 	-1   0    0    1   
@@ -99,8 +99,8 @@ L power:GND #PWR?
 U 1 1 606001CA
 P 1200 2050
 AR Path="/6043E029/606001CA" Ref="#PWR?"  Part="1" 
-AR Path="/605EF1AE/606001CA" Ref="#PWR034"  Part="1" 
-F 0 "#PWR034" H 1200 1800 50  0001 C CNN
+AR Path="/605EF1AE/606001CA" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 1200 1800 50  0001 C CNN
 F 1 "GND" H 1205 1877 50  0000 C CNN
 F 2 "" H 1200 2050 50  0001 C CNN
 F 3 "" H 1200 2050 50  0001 C CNN
@@ -112,8 +112,8 @@ L power:+5V #PWR?
 U 1 1 606001D1
 P 1200 1400
 AR Path="/6043E029/606001D1" Ref="#PWR?"  Part="1" 
-AR Path="/605EF1AE/606001D1" Ref="#PWR033"  Part="1" 
-F 0 "#PWR033" H 1200 1250 50  0001 C CNN
+AR Path="/605EF1AE/606001D1" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 1200 1250 50  0001 C CNN
 F 1 "+5V" H 1215 1573 50  0000 C CNN
 F 2 "" H 1200 1400 50  0001 C CNN
 F 3 "" H 1200 1400 50  0001 C CNN
@@ -125,8 +125,8 @@ L power:GND #PWR?
 U 1 1 606001E7
 P 3675 2500
 AR Path="/6043E029/606001E7" Ref="#PWR?"  Part="1" 
-AR Path="/605EF1AE/606001E7" Ref="#PWR037"  Part="1" 
-F 0 "#PWR037" H 3675 2250 50  0001 C CNN
+AR Path="/605EF1AE/606001E7" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 3675 2250 50  0001 C CNN
 F 1 "GND" H 3680 2327 50  0000 C CNN
 F 2 "" H 3675 2500 50  0001 C CNN
 F 3 "" H 3675 2500 50  0001 C CNN
@@ -143,19 +143,19 @@ L Device:R_US R?
 U 1 1 606001FA
 P 3675 2075
 AR Path="/6043E029/606001FA" Ref="R?"  Part="1" 
-AR Path="/605EF1AE/606001FA" Ref="R19"  Part="1" 
-F 0 "R19" H 3575 2225 50  0000 C CNN
+AR Path="/605EF1AE/606001FA" Ref="R3"  Part="1" 
+F 0 "R3" H 3575 2225 50  0000 C CNN
 F 1 "100k" H 3775 2225 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3715 2065 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 3675 2075 50  0001 C CNN
 F 4 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07100KL/726889" H 3675 2075 50  0001 C CNN "DK_Detail_Page"
-F 5 "311-100KHRCT-ND" H 3675 2075 50  0001 C CNN "Digi-Key Part Number"
+F 5 "311-100KHRCT-ND" H 3675 2075 50  0001 C CNN "Digi-Key_PN"
 F 6 "Yageo" H 3675 2075 50  0001 C CNN "Manufacturer"
 F 7 "RC0603FR-07100KL" H 3675 2075 50  0001 C CNN "Manufacturer Product Number"
 F 8 "RES SMD 100K OHM 1% 1/10W 0603" H 3675 2075 50  0001 C CNN "Description"
-F 9 "±1%" H 3575 1925 50  0000 C CNN "Tolerance"
+F 9 "±1%" H 3550 1975 50  0000 C CNN "Tolerance"
 F 10 "0.1W, 1/10W" H 3675 2075 50  0001 C CNN "Power (Watts)"
-F 11 "0603" H 3775 1925 50  0000 C CNN "Package"
+F 11 "0603" H 3800 1975 50  0000 C CNN "Package"
 	1    3675 2075
 	1    0    0    -1  
 $EndComp
@@ -1652,13 +1652,13 @@ L Device:R_US R?
 U 1 1 606B6806
 P 2025 1600
 AR Path="/6043E029/606B6806" Ref="R?"  Part="1" 
-AR Path="/605EF1AE/606B6806" Ref="R?"  Part="1" 
-F 0 "R?" V 1975 1450 50  0000 C CNN
+AR Path="/605EF1AE/606B6806" Ref="R1"  Part="1" 
+F 0 "R1" V 1975 1450 50  0000 C CNN
 F 1 "100k" V 1975 1750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2065 1590 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2025 1600 50  0001 C CNN
 F 4 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07100KL/726889" H 2025 1600 50  0001 C CNN "DK_Detail_Page"
-F 5 "311-100KHRCT-ND" H 2025 1600 50  0001 C CNN "Digi-Key Part Number"
+F 5 "311-100KHRCT-ND" H 2025 1600 50  0001 C CNN "Digi-Key_PN"
 F 6 "Yageo" H 2025 1600 50  0001 C CNN "Manufacturer"
 F 7 "RC0603FR-07100KL" H 2025 1600 50  0001 C CNN "Manufacturer Product Number"
 F 8 "RES SMD 100K OHM 1% 1/10W 0603" H 2025 1600 50  0001 C CNN "Description"
@@ -1679,15 +1679,15 @@ L Device:C C?
 U 1 1 606CD43C
 P 4850 1850
 AR Path="/6043E029/606CD43C" Ref="C?"  Part="1" 
-AR Path="/605EF1AE/606CD43C" Ref="C?"  Part="1" 
-F 0 "C?" H 5000 1750 50  0000 R CNN
+AR Path="/605EF1AE/606CD43C" Ref="C5"  Part="1" 
+F 0 "C5" H 5000 1750 50  0000 R CNN
 F 1 "1uF" H 4800 1750 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4888 1700 50  0001 C CNN
 F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A105KO8NNNC.jsp" H 4850 1850 50  0001 C CNN
 F 4 "1276-1034-1-ND" H 4850 1850 50  0001 C CNN "Digi-Key_PN"
-F 5 "±10%" H 5000 1950 50  0000 C CNN "Tolerance"
-F 6 "X5R" H 4850 1850 50  0001 C CNN " Temperature Coefficient"
-F 7 "0603" H 4750 1950 50  0000 C CNN "Package"
+F 5 "±10%" H 4975 1950 50  0001 C CNN "Tolerance"
+F 6 "X5R" H 4950 1950 50  0000 C CNN " Temperature Coefficient"
+F 7 "0603" H 4725 1950 50  0000 C CNN "Package"
 	1    4850 1850
 	-1   0    0    1   
 $EndComp
@@ -1700,17 +1700,6 @@ Wire Wire Line
 Connection ~ 3675 1875
 Wire Wire Line
 	3675 1875 3675 1925
-$Comp
-L Device:C C?
-U 1 1 606D55BC
-P 4400 1850
-F 0 "C?" H 4250 1975 50  0000 L CNN
-F 1 "10uF" H 4450 1975 50  0000 L CNN
-F 2 "" H 4438 1700 50  0001 C CNN
-F 3 "~" H 4400 1850 50  0001 C CNN
-	1    4400 1850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4400 1500 4400 1700
 Wire Wire Line
@@ -1720,8 +1709,8 @@ L power:GND #PWR?
 U 1 1 606D7465
 P 4850 2100
 AR Path="/6043E029/606D7465" Ref="#PWR?"  Part="1" 
-AR Path="/605EF1AE/606D7465" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4850 1850 50  0001 C CNN
+AR Path="/605EF1AE/606D7465" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 4850 1850 50  0001 C CNN
 F 1 "GND" H 4855 1927 50  0000 C CNN
 F 2 "" H 4850 2100 50  0001 C CNN
 F 3 "" H 4850 2100 50  0001 C CNN
@@ -1731,24 +1720,21 @@ $EndComp
 Wire Wire Line
 	4850 2000 4850 2100
 $Comp
-L Device:C C?
-U 1 1 606D88EA
-P 3325 2150
-F 0 "C?" H 3200 2250 50  0000 L CNN
-F 1 "10uF" H 3350 2250 50  0000 L CNN
-F 2 "" H 3363 2000 50  0001 C CNN
-F 3 "~" H 3325 2150 50  0001 C CNN
-	1    3325 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
+L Device:C C1
 U 1 1 606D9122
 P 1200 1800
-F 0 "C?" H 1315 1846 50  0000 L CNN
-F 1 "10uF" H 1315 1755 50  0000 L CNN
-F 2 "" H 1238 1650 50  0001 C CNN
-F 3 "~" H 1200 1800 50  0001 C CNN
+F 0 "C1" H 1025 1900 50  0000 L CNN
+F 1 "10uF" H 1250 1900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1238 1650 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B106KPQNNNE.jsp" H 1200 1800 50  0001 C CNN
+F 4 "1276-1764-1-ND" H 1200 1800 50  0001 C CNN "Digi-Key_PN"
+F 5 "Samsung Electro-Mechanics" H 1200 1800 50  0001 C CNN "Manufacturer"
+F 6 "CL21B106KPQNNNE" H 1200 1800 50  0001 C CNN "MPN"
+F 7 "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B106KPQNNNE/3887422" H 1200 1800 50  0001 C CNN "DK_Detail_Page"
+F 8 "CAP CER 10UF 10V X7R 0805" H 1200 1800 50  0001 C CNN "Description"
+F 9 "±10%" H 1100 1700 50  0001 C CNN "Tolerance"
+F 10 "0805" H 1350 1700 50  0000 C CNN "Package"
+F 11 "X7R" H 1075 1700 50  0000 C CNN "Temperature Coefficient"
 	1    1200 1800
 	1    0    0    -1  
 $EndComp
@@ -1772,13 +1758,13 @@ L Device:R_US R?
 U 1 1 606E9759
 P 3675 1675
 AR Path="/6043E029/606E9759" Ref="R?"  Part="1" 
-AR Path="/605EF1AE/606E9759" Ref="R?"  Part="1" 
-F 0 "R?" H 3600 1800 50  0000 C CNN
+AR Path="/605EF1AE/606E9759" Ref="R2"  Part="1" 
+F 0 "R2" H 3600 1800 50  0000 C CNN
 F 1 "182k" H 3800 1800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3715 1665 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 3675 1675 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07100KL/726889" H 3675 1675 50  0001 C CNN "DK_Detail_Page"
-F 5 "311-100KHRCT-ND" H 3675 1675 50  0001 C CNN "Digi-Key Part Number"
+F 4 "https://www.digikey.com/en/products/detail/yageo/RC0603FR-07182KL/726997" H 3675 1675 50  0001 C CNN "DK_Detail_Page"
+F 5 "311-182KHRCT-ND" H 3675 1675 50  0001 C CNN "Digi-Key_PN"
 F 6 "Yageo" H 3675 1675 50  0001 C CNN "Manufacturer"
 F 7 "RC0603FR-07100KL" H 3675 1675 50  0001 C CNN "Manufacturer Product Number"
 F 8 "RES SMD 100K OHM 1% 1/10W 0603" H 3675 1675 50  0001 C CNN "Description"
@@ -1804,4 +1790,42 @@ Wire Wire Line
 	3675 1500 4400 1500
 Text GLabel 4850 1400 1    50   UnSpc ~ 0
 -4V5
+$Comp
+L Device:C C3
+U 1 1 607957B1
+P 3325 2150
+F 0 "C3" H 3150 2250 50  0000 L CNN
+F 1 "10uF" H 3375 2250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3363 2000 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B106KPQNNNE.jsp" H 3325 2150 50  0001 C CNN
+F 4 "1276-1764-1-ND" H 3325 2150 50  0001 C CNN "Digi-Key_PN"
+F 5 "Samsung Electro-Mechanics" H 3325 2150 50  0001 C CNN "Manufacturer"
+F 6 "CL21B106KPQNNNE" H 3325 2150 50  0001 C CNN "MPN"
+F 7 "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B106KPQNNNE/3887422" H 3325 2150 50  0001 C CNN "DK_Detail_Page"
+F 8 "CAP CER 10UF 10V X7R 0805" H 3325 2150 50  0001 C CNN "Description"
+F 9 "±10%" H 3225 2050 50  0001 C CNN "Tolerance"
+F 10 "0805" H 3450 2050 50  0000 C CNN "Package"
+F 11 "X7R" H 3200 2050 50  0000 C CNN "Temperature Coefficient"
+	1    3325 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 60796B10
+P 4400 1850
+F 0 "C4" H 4225 1950 50  0000 L CNN
+F 1 "10uF" H 4450 1950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4438 1700 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B106KPQNNNE.jsp" H 4400 1850 50  0001 C CNN
+F 4 "1276-1764-1-ND" H 4400 1850 50  0001 C CNN "Digi-Key_PN"
+F 5 "Samsung Electro-Mechanics" H 4400 1850 50  0001 C CNN "Manufacturer"
+F 6 "CL21B106KPQNNNE" H 4400 1850 50  0001 C CNN "MPN"
+F 7 "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B106KPQNNNE/3887422" H 4400 1850 50  0001 C CNN "DK_Detail_Page"
+F 8 "CAP CER 10UF 10V X7R 0805" H 4400 1850 50  0001 C CNN "Description"
+F 9 "±10%" H 4300 1750 50  0001 C CNN "Tolerance"
+F 10 "0805" H 4525 1750 50  0000 C CNN "Package"
+F 11 "X7R" H 4275 1750 50  0000 C CNN "Temperature Coefficient"
+	1    4400 1850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

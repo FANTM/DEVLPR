@@ -297,21 +297,6 @@ Wire Notes Line
 	11200 1000 10700 1000
 Wire Notes Line
 	10700 1000 10700 500 
-$Sheet
-S 1500 3450 1750 1050
-U 6043E029
-F0 "EMG Amplifiers" 50
-F1 "emg_amplifier.sch" 50
-F2 "PASSIVE_LP_OUT" O R 3250 3750 50 
-F3 "PASSIVE_HP_OUT" O R 3250 3850 50 
-F4 "ACTIVE_HP_OUT" O R 3250 3950 50 
-F5 "ACTIVE_LP_OUT" O R 3250 4050 50 
-F6 "RAW_EMG" O R 3250 4150 50 
-F7 "EMG_OUT" O R 3250 3650 50 
-F8 "EMG_P" I L 1500 3600 50 
-F9 "EMG_N" I L 1500 3700 50 
-F10 "EMG_GND" I L 1500 3800 50 
-$EndSheet
 $Comp
 L dk_Barrel-Audio-Connectors:SJ-3523-SMT-TR CON1
 U 1 1 604412AC
@@ -345,43 +330,19 @@ EMG_N
 Text Label 1850 1200 2    50   ~ 0
 EMG_GND
 Wire Wire Line
-	1500 3600 950  3600
+	1275 2050 725  2050
 Wire Wire Line
-	1500 3700 950  3700
+	1275 2150 725  2150
 Wire Wire Line
-	1500 3800 950  3800
-Text Label 950  3600 0    50   ~ 0
+	1275 2250 725  2250
+Text Label 725  2050 0    50   ~ 0
 EMG_P
-Text Label 950  3700 0    50   ~ 0
+Text Label 725  2150 0    50   ~ 0
 EMG_N
-Text Label 950  3800 0    50   ~ 0
+Text Label 725  2250 0    50   ~ 0
 EMG_GND
-Wire Wire Line
-	3250 3650 3650 3650
-Wire Wire Line
-	3250 3750 3650 3750
-Wire Wire Line
-	3250 3850 3650 3850
-Wire Wire Line
-	3250 3950 3650 3950
-Wire Wire Line
-	3250 4050 3650 4050
-Wire Wire Line
-	3250 4150 3650 4150
-Text Label 3650 3650 2    50   ~ 0
-A0
-Text Label 3650 3750 2    50   ~ 0
-A1
-Text Label 3650 3850 2    50   ~ 0
-A2
-Text Label 3650 3950 2    50   ~ 0
-A3
-Text Label 3650 4050 2    60   ~ 0
-A4(SDA)
-Text Label 3650 4150 2    60   ~ 0
-A5(SCL)
 $Sheet
-S 4400 3400 1300 1200
+S 1275 3450 1300 1200
 U 605EF1AE
 F0 "-5V Source" 50
 F1 "Minus5Source.sch" 50
@@ -1858,4 +1819,95 @@ FC FC 7C 1F 1F 9F 77 32 80 31 FE FA EB AF E1 42 8D C7 8F 1F 3F 78 F0 40 22 91 B8
 94 B9 5B BB 17 FC 1F AF 6B FF C5 03 69 40 98 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:67996-412HLF J1
+U 1 1 60748A64
+P 7450 2700
+F 0 "J1" H 7450 3147 60  0000 C CNN
+F 1 "EMG OUTPUT" H 7450 3041 60  0000 C CNN
+F 2 "digikey-footprints:PinHeader_6x2_P2.54mm_Horizontal" H 7650 2900 60  0001 L CNN
+F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/67996.pdf" H 7650 3000 60  0001 L CNN
+F 4 "609-3219-ND" H 7650 3100 60  0001 L CNN "Digi-Key_PN"
+F 5 "67996-412HLF" H 7650 3200 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 7650 3300 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 7650 3400 60  0001 L CNN "Family"
+F 8 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/67996.pdf" H 7650 3500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/amphenol-icc-fci/67996-412HLF/609-3219-ND/1878508" H 7650 3600 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 12POS 2.54MM" H 7650 3700 60  0001 L CNN "Description"
+F 11 "Amphenol ICC (FCI)" H 7650 3800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7650 3900 60  0001 L CNN "Status"
+	1    7450 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 2500 7150 2500
+Wire Wire Line
+	7150 2500 7150 2600
+Wire Wire Line
+	7150 3000 7250 3000
+Wire Wire Line
+	7250 2900 7150 2900
+Connection ~ 7150 2900
+Wire Wire Line
+	7150 2900 7150 3000
+Wire Wire Line
+	7250 2800 7150 2800
+Connection ~ 7150 2800
+Wire Wire Line
+	7150 2800 7150 2900
+Wire Wire Line
+	7250 2700 7150 2700
+Connection ~ 7150 2700
+Wire Wire Line
+	7150 2700 7150 2750
+Wire Wire Line
+	7250 2600 7150 2600
+Connection ~ 7150 2600
+Wire Wire Line
+	7150 2600 7150 2700
+Connection ~ 7150 2750
+Wire Wire Line
+	7150 2750 7150 2800
+Text Label 8075 3000 2    60   ~ 0
+A0
+Text Label 8075 2900 2    60   ~ 0
+A1
+Text Label 8075 2800 2    60   ~ 0
+A2
+Text Label 8075 2700 2    60   ~ 0
+A3
+Text Label 8075 2600 2    60   ~ 0
+A4(SDA)
+Wire Wire Line
+	7650 2900 8075 2900
+Wire Wire Line
+	7650 3000 8075 3000
+Text Label 8075 2500 2    60   ~ 0
+A5(SCL)
+Wire Wire Line
+	7650 2800 8075 2800
+Wire Wire Line
+	7650 2500 8075 2500
+Wire Wire Line
+	7650 2600 8075 2600
+Wire Wire Line
+	7650 2700 8075 2700
+$Sheet
+S 1275 1900 1750 1050
+U 6043E029
+F0 "EMG Amplifiers" 50
+F1 "emg_amplifier.sch" 50
+F2 "EMG_OUT" O R 3025 2100 50 
+F3 "EMG_P" I L 1275 2050 50 
+F4 "EMG_N" I L 1275 2150 50 
+F5 "EMG_GND" I L 1275 2250 50 
+$EndSheet
+Text Label 3425 2100 2    50   ~ 0
+EMG_OUT
+Wire Wire Line
+	3025 2100 3425 2100
+Text Label 6675 2750 0    50   ~ 0
+EMG_OUT
+Wire Wire Line
+	6675 2750 7150 2750
 $EndSCHEMATC
