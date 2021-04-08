@@ -1,5 +1,5 @@
 # DEVLPR
-![image](https://user-images.githubusercontent.com/25969533/113350882-b3746e80-92ff-11eb-94f3-a29ea9aaf376.png)
+![DEVLPR](https://user-images.githubusercontent.com/25969533/114089506-d9f45580-987b-11eb-9029-9c34607b12e9.png)
 
 ## About
 ![zebra_fantm_gradient_bluepink](https://user-images.githubusercontent.com/25969533/113354706-2a603600-9305-11eb-895e-efa2f219848f.png) 
