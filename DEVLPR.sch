@@ -342,7 +342,7 @@ EMG_N
 Text Label 725  2250 0    50   ~ 0
 EMG_GND
 $Sheet
-S 1275 3450 1300 1200
+S 1275 3450 1750 300 
 U 605EF1AE
 F0 "-5V Source" 50
 F1 "Minus5Source.sch" 50

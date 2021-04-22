@@ -1,3 +1,23 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP INA818IDR
+D IC INST AMP 1 CIRCUIT 8VSSOP
+K 296-23564-1-ND
+F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2FINA818
+$ENDCMP
+#
+$CMP MAX1735
+F https://datasheets.maximintegrated.com/en/ds/MAX1735.pdf
+$ENDCMP
+#
+$CMP OPA375DCK
+D IC INST AMP 1 CIRCUIT 8VSSOP
+K 296-23564-1-ND
+F https://www.ti.com/lit/ds/symlink/opa375.pdf?ts=1619040008280&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FOPA375
+$ENDCMP
+#
+$CMP TPS60403
+F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftps60403-q1
+$ENDCMP
+#
 #End Doc Library

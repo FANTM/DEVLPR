@@ -1,6 +1,57 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# INA818IDR
+#
+DEF INA818IDR U 0 40 Y Y 1 F N
+F0 "U" -200 150 60 H V C CNN
+F1 "INA818IDR" 100 -600 60 H V L CNN
+F2 "digikey-footprints:SOIC-8_W3.9mm" 200 200 60 H I L CNN
+F3 "" 200 300 60 H I L CNN
+F4 "296-INA818IDRCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "INA818IDR" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "Linear - Amplifiers - Instrumentation, OP Amps, Buffer Amps" 200 700 60 H I L CNN "Family"
+F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2FINA818" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "https://www.digikey.com/en/products/detail/texas-instruments/INA818IDR/10434718" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC INST AMP 1 CIRCUIT 8SOIC" 200 1000 60 H I L CNN "Description"
+F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -300 100 200 -500 0 1 0 f
+X RG 1 -400 -300 100 R 50 50 1 1 P
+X VIN- 2 -400 0 100 R 50 50 1 1 I
+X VIN+ 3 -400 -100 100 R 50 50 1 1 I
+X V- 4 0 -600 100 U 50 50 1 1 W
+X REF 5 -400 -200 100 R 50 50 1 1 I
+X VOUT 6 300 -200 100 L 50 50 1 1 O
+X V+ 7 0 200 100 D 50 50 1 1 W
+X RG 8 -400 -400 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# MAX1735
+#
+DEF MAX1735 U 0 40 Y Y 1 F N
+F0 "U" -350 350 50 H V C CNN
+F1 "MAX1735" 350 -350 50 H V C CNN
+F2 "Package_TO_SOT_SMD:SOT-23-5" 700 600 50 H I C CNN
+F3 "" 250 200 50 H I C CNN
+F4 "https://www.digikey.com/en/products/detail/maxim-integrated/MAX1735EUK30-T/1517862" 350 950 50 H I C CNN "DK_Detail_Page"
+F5 "MAX1735EUK30+TCT-ND" 450 750 50 H I C CNN "Digi-Key_PN"
+F6 "Maxim Integrated" 450 700 50 H I C CNN "Manufacturer"
+F7 "MAX1735EUK30+T" 550 1050 50 H I C CNN "MPN"
+F8 "IC REG LIN NEG ADJ 200MA SOT23-5" 1050 850 50 H I C CNN "Description"
+DRAW
+S -300 300 300 -300 0 1 0 f
+X GND 1 0 -400 100 U 50 50 1 1 P
+X IN 2 -400 200 100 R 50 50 1 1 I
+X ~SHDN 3 -400 -50 100 R 50 50 1 1 I
+X SET 4 400 -50 100 L 50 50 1 1 I
+X OUT 5 400 200 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
 # OPA140DGK
 #
 DEF OPA140DGK U 0 10 Y Y 1 F N
@@ -15,6 +66,56 @@ X + 3 -300 100 100 R 50 50 1 1 I
 X V- 4 -100 -300 150 U 50 50 1 1 W
 X ~ 6 300 0 100 L 50 50 1 1 O
 X V+ 7 -100 300 150 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# OPA375DCK
+#
+DEF OPA375DCK U 0 40 Y Y 1 F N
+F0 "U" -200 450 60 H V C CNN
+F1 "OPA375DCK" 300 -400 60 H V L CNN
+F2 "digikey-footprints:SC-70-5" 600 200 60 H I L CNN
+F3 "" 600 300 60 H I L CNN
+F4 "296-49849-1-ND" 600 400 60 H I L CNN "Digi-Key_PN"
+F5 "OPA375IDCKR" 600 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 600 600 60 H I L CNN "Category"
+F7 "Linear - Amplifiers - Instrumentation, OP Amps, Buffer Amps" 550 700 60 H I L CNN "Family"
+F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fopa375" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "https://www.digikey.com/en/products/detail/texas-instruments/OPA375IDCKR/8020863" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC OPAMP GP 1 CIRCUIT SC70-5" 200 1000 60 H I L CNN "Description"
+F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 4 0 1 0 300 0 -150 300 -150 -300 300 0 f
+X + 1 -250 200 100 R 50 50 1 1 I
+X V- 2 0 -300 100 U 50 50 1 1 W
+X - 3 -250 -200 100 R 50 50 1 1 I
+X OUT 4 400 0 100 L 50 50 1 1 O
+X V+ 5 0 300 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# TPS60403
+#
+DEF TPS60403 U 0 40 Y Y 1 F N
+F0 "U" -300 450 50 H V C CNN
+F1 "TPS60403" 350 -400 50 H V C CNN
+F2 "Package_TO_SOT_SMD:SOT-23-5" 1300 850 50 H I C CNN
+F3 "" 50 0 50 H I C CNN
+F4 "https://www.digikey.com/en/products/detail/texas-instruments/TPS60403QDBVRQ1/770875" 2450 1400 50 H I C CNN "DK_Detail_Page"
+F5 "296-18036-1-ND" 1000 1150 50 H I C CNN "Digi-Key_PN"
+F6 "Texas Instruments" 1000 1050 50 H I C CNN "Manufacturer"
+F7 "TPS60403QDBVRQ1" 1000 950 50 H I C CNN "MPN"
+F8 "IC REG CHARG PUMP INV 60MA SOT23" 1400 1250 50 H I C CNN "Description"
+F9 "60mA" 400 350 50 H V C CNN "Current"
+F10 "-2.5V" 400 450 50 H V C CNN "Output"
+DRAW
+S -200 400 200 -300 0 1 0 f
+X OUT 1 300 0 100 L 50 50 1 1 O
+X IN 2 -300 0 100 R 50 50 1 1 I
+X Cfly- 3 -150 500 100 D 50 50 1 1 P
+X GND 4 0 -400 100 U 50 50 1 1 P
+X Cfly+ 5 150 500 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
