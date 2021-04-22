@@ -50,11 +50,11 @@ Text Label 10550 2100 0    60   ~ 0
 Text Label 10550 2000 0    60   ~ 0
 9(**)
 Text Label 10550 1900 0    60   ~ 0
-10(**/SS)
+10(**|CS)
 Text Label 10550 1800 0    60   ~ 0
-11(**/MOSI)
+11(**|SDO)
 Text Label 10550 1700 0    60   ~ 0
-12(MISO)
+12(SDI)
 Text Label 10550 1600 0    60   ~ 0
 13(SCK)
 Text Label 10550 1400 0    60   ~ 0
