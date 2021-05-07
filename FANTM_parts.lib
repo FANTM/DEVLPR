@@ -30,6 +30,35 @@ X RG 8 -400 -400 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# INA819IDGK
+#
+DEF INA819IDGK U 0 40 Y Y 1 F N
+F0 "U" -200 150 60 H V C CNN
+F1 "INA819IDGK" 100 -600 60 H V L CNN
+F2 "digikey-footprints:TSSOP-8_W3mm" 200 200 60 H I L CNN
+F3 "" 200 300 60 H I L CNN
+F4 "296-INA819IDGKTCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "INA819IDGKT" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "Linear - Amplifiers - Instrumentation, OP Amps, Buffer Amps" 200 700 60 H I L CNN "Family"
+F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2FINA819" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "https://www.digikey.com/en/products/detail/texas-instruments/INA819IDGKT/10434733" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC INST AMP 1 CIRCUIT 8VSSOP" 200 1000 60 H I L CNN "Description"
+F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -300 100 200 -500 0 1 0 f
+X VIN- 1 -400 0 100 R 50 50 1 1 I
+X RG 2 -400 -300 100 R 50 50 1 1 P
+X RG 3 -400 -400 100 R 50 50 1 1 P
+X VIN+ 4 -400 -100 100 R 50 50 1 1 I
+X V- 5 0 -600 100 U 50 50 1 1 W
+X REF 6 -400 -200 100 R 50 50 1 1 I
+X VOUT 7 300 -200 100 L 50 50 1 1 O
+X V+ 8 0 200 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
 # MAX1735
 #
 DEF MAX1735 U 0 40 Y Y 1 F N

@@ -1539,60 +1539,6 @@ F 3 "" H 2350 2275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
-U 1 1 6081CFED
-P 1800 1000
-F 0 "C2" V 1750 900 50  0000 C CNN
-F 1 "1uF" V 1750 1125 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1838 850 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B105KOFNNNG.jsp" H 1800 1000 50  0001 C CNN
-F 4 "1276-6471-1-ND" V 1800 1000 50  0001 C CNN "Digi-Key_PN"
-F 5 "Samsung Electro-Mechanics" V 1800 1000 50  0001 C CNN "Manufacturer"
-F 6 "CL21B105KOFNNNG" V 1800 1000 50  0001 C CNN "MPN"
-F 7 "CAP CER 1UF 16V X7R 0805" V 1800 1000 50  0001 C CNN "Description"
-F 8 "16V" V 1548 1000 50  0001 C CNN "Voltage Rating"
-F 9 "X7R" H 1900 900 50  0000 C CNN "Temperature Coefficient"
-F 10 "0805" H 1900 1075 50  0000 C CNN "Package"
-	1    1800 1000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C3
-U 1 1 60820E75
-P 2350 2075
-F 0 "C3" H 2450 1975 50  0000 C CNN
-F 1 "1uF" H 2225 1975 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2388 1925 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B105KOFNNNG.jsp" H 2350 2075 50  0001 C CNN
-F 4 "1276-6471-1-ND" V 2350 2075 50  0001 C CNN "Digi-Key_PN"
-F 5 "Samsung Electro-Mechanics" V 2350 2075 50  0001 C CNN "Manufacturer"
-F 6 "CL21B105KOFNNNG" V 2350 2075 50  0001 C CNN "MPN"
-F 7 "CAP CER 1UF 16V X7R 0805" V 2350 2075 50  0001 C CNN "Description"
-F 8 "16V" V 2098 2075 50  0001 C CNN "Voltage Rating"
-F 9 "X7R" H 2450 2175 50  0000 C CNN "Temperature Coefficient"
-F 10 "0805" H 2225 2175 50  0000 C CNN "Package"
-	1    2350 2075
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C1
-U 1 1 60821CE6
-P 975 2100
-F 0 "C1" H 1075 2000 50  0000 C CNN
-F 1 "1uF" H 850 2000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1013 1950 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B105KOFNNNG.jsp" H 975 2100 50  0001 C CNN
-F 4 "1276-6471-1-ND" V 975 2100 50  0001 C CNN "Digi-Key_PN"
-F 5 "Samsung Electro-Mechanics" V 975 2100 50  0001 C CNN "Manufacturer"
-F 6 "CL21B105KOFNNNG" V 975 2100 50  0001 C CNN "MPN"
-F 7 "CAP CER 1UF 16V X7R 0805" V 975 2100 50  0001 C CNN "Description"
-F 8 "16V" V 723 2100 50  0001 C CNN "Voltage Rating"
-F 9 "X7R" H 1075 2200 50  0000 C CNN "Temperature Coefficient"
-F 10 "0805" H 850 2200 50  0000 C CNN "Package"
-	1    975  2100
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+5V #PWR?
 U 1 1 60822707
 P 975 1700
@@ -1611,124 +1557,124 @@ Connection ~ 975  1850
 Wire Wire Line
 	975  1850 1500 1850
 Wire Wire Line
-	3500 2450 3500 2550
+	4075 2450 4075 2550
 $Comp
 L power:GND #PWR?
 U 1 1 60859BAA
-P 4050 2300
+P 4625 2300
 AR Path="/6043E029/60859BAA" Ref="#PWR?"  Part="1" 
-AR Path="/605EF1AE/60859BAA" Ref="#PWR010"  Part="1" 
-F 0 "#PWR010" H 4050 2050 50  0001 C CNN
-F 1 "GND" H 4055 2127 50  0000 C CNN
-F 2 "" H 4050 2300 50  0001 C CNN
-F 3 "" H 4050 2300 50  0001 C CNN
-	1    4050 2300
+AR Path="/605EF1AE/60859BAA" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 4625 2050 50  0001 C CNN
+F 1 "GND" H 4630 2127 50  0000 C CNN
+F 2 "" H 4625 2300 50  0001 C CNN
+F 3 "" H 4625 2300 50  0001 C CNN
+	1    4625 2300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 6085A442
-P 3500 2550
+P 4075 2550
 AR Path="/6043E029/6085A442" Ref="#PWR?"  Part="1" 
-AR Path="/605EF1AE/6085A442" Ref="#PWR09"  Part="1" 
-F 0 "#PWR09" H 3500 2300 50  0001 C CNN
-F 1 "GND" H 3505 2377 50  0000 C CNN
-F 2 "" H 3500 2550 50  0001 C CNN
-F 3 "" H 3500 2550 50  0001 C CNN
-	1    3500 2550
+AR Path="/605EF1AE/6085A442" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 4075 2300 50  0001 C CNN
+F 1 "GND" H 4080 2377 50  0000 C CNN
+F 2 "" H 4075 2550 50  0001 C CNN
+F 3 "" H 4075 2550 50  0001 C CNN
+	1    4075 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3100 2100 2925 2100
+	3675 2100 3500 2100
 Wire Wire Line
-	2925 2100 2925 1850
+	3500 2100 3500 1850
 Wire Wire Line
-	2925 1850 3100 1850
-Text Label 2725 1850 0    50   ~ 0
--5V
-Text GLabel 4375 1700 1    50   UnSpc ~ 0
+	3500 1850 3675 1850
+Text Label 3325 1850 0    50   ~ 0
+LDO_IN
+Text GLabel 4950 1700 1    50   UnSpc ~ 0
 -3V
 $Comp
-L Device:C C4
+L Device:C C6
 U 1 1 6085C749
-P 4375 2075
-F 0 "C4" H 4475 1975 50  0000 C CNN
-F 1 "1uF" H 4250 1975 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4413 1925 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B105KOFNNNG.jsp" H 4375 2075 50  0001 C CNN
-F 4 "1276-6471-1-ND" V 4375 2075 50  0001 C CNN "Digi-Key_PN"
-F 5 "Samsung Electro-Mechanics" V 4375 2075 50  0001 C CNN "Manufacturer"
-F 6 "CL21B105KOFNNNG" V 4375 2075 50  0001 C CNN "MPN"
-F 7 "CAP CER 1UF 16V X7R 0805" V 4375 2075 50  0001 C CNN "Description"
-F 8 "16V" V 4123 2075 50  0001 C CNN "Voltage Rating"
-F 9 "X7R" H 4475 2175 50  0000 C CNN "Temperature Coefficient"
-F 10 "0805" H 4250 2175 50  0000 C CNN "Package"
-	1    4375 2075
+P 4950 2075
+F 0 "C6" H 5050 1975 50  0000 C CNN
+F 1 "1uF" H 4825 1975 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4988 1925 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B105KOFNNNG.jsp" H 4950 2075 50  0001 C CNN
+F 4 "1276-6471-1-ND" V 4950 2075 50  0001 C CNN "Digi-Key_PN"
+F 5 "Samsung Electro-Mechanics" V 4950 2075 50  0001 C CNN "Manufacturer"
+F 6 "CL21B105KOFNNNG" V 4950 2075 50  0001 C CNN "MPN"
+F 7 "CAP CER 1UF 16V X7R 0805" V 4950 2075 50  0001 C CNN "Description"
+F 8 "16V" V 4698 2075 50  0001 C CNN "Voltage Rating"
+F 9 "X7R" H 5050 2175 50  0000 C CNN "Temperature Coefficient"
+F 10 "0805" H 4825 2175 50  0000 C CNN "Package"
+	1    4950 2075
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60860BBE
-P 4375 2300
+P 4950 2300
 AR Path="/6043E029/60860BBE" Ref="#PWR?"  Part="1" 
-AR Path="/605EF1AE/60860BBE" Ref="#PWR011"  Part="1" 
-F 0 "#PWR011" H 4375 2050 50  0001 C CNN
-F 1 "GND" H 4380 2127 50  0000 C CNN
-F 2 "" H 4375 2300 50  0001 C CNN
-F 3 "" H 4375 2300 50  0001 C CNN
-	1    4375 2300
+AR Path="/605EF1AE/60860BBE" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 4950 2050 50  0001 C CNN
+F 1 "GND" H 4955 2127 50  0000 C CNN
+F 2 "" H 4950 2300 50  0001 C CNN
+F 3 "" H 4950 2300 50  0001 C CNN
+	1    4950 2300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3900 1850 4375 1850
+	4475 1850 4950 1850
 Wire Wire Line
-	4375 1925 4375 1850
-Connection ~ 4375 1850
+	4950 1925 4950 1850
+Connection ~ 4950 1850
 Wire Wire Line
-	4375 2225 4375 2300
+	4950 2225 4950 2300
 Wire Wire Line
-	4050 2100 4050 2300
+	4625 2100 4625 2300
 Wire Wire Line
-	3900 2100 4050 2100
+	4475 2100 4625 2100
 Wire Wire Line
 	2100 1850 2350 1850
-Connection ~ 2925 1850
+Connection ~ 3500 1850
 $Comp
 L dk_Test-Points:5011 TP?
 U 1 1 608AB607
-P 4725 1625
+P 5300 1625
 AR Path="/608AB607" Ref="TP?"  Part="1" 
-AR Path="/605EF1AE/608AB607" Ref="TP1"  Part="1" 
-F 0 "TP1" H 4675 1672 50  0001 R CNN
-F 1 "-3V" H 4675 1672 50  0000 R CNN
-F 2 "digikey-footprints:Test_Point_D1.02mm" H 4925 1825 60  0001 L CNN
-F 3 "http://www.keyelco.com/product-pdf.cfm?p=1320" H 4925 1925 60  0001 L CNN
-F 4 "36-5011-ND" H 4925 2025 60  0001 L CNN "Digi-Key_PN"
-F 5 "5011" H 4925 2125 60  0001 L CNN "MPN"
-F 6 "Test and Measurement" H 4925 2225 60  0001 L CNN "Category"
-F 7 "Test Points" H 4925 2325 60  0001 L CNN "Family"
-F 8 "http://www.keyelco.com/product-pdf.cfm?p=1320" H 4925 2425 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/keystone-electronics/5011/36-5011-ND/255333" H 4925 2525 60  0001 L CNN "DK_Detail_Page"
-F 10 "PC TEST POINT MULTIPURPOSE BLACK" H 4925 2625 60  0001 L CNN "Description"
-F 11 "Keystone Electronics" H 4925 2725 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4925 2825 60  0001 L CNN "Status"
-	1    4725 1625
+AR Path="/605EF1AE/608AB607" Ref="TP3"  Part="1" 
+F 0 "TP3" H 5250 1672 50  0001 R CNN
+F 1 "-3V" H 5250 1672 50  0000 R CNN
+F 2 "digikey-footprints:Test_Point_D1.02mm" H 5500 1825 60  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1320" H 5500 1925 60  0001 L CNN
+F 4 "36-5011-ND" H 5500 2025 60  0001 L CNN "Digi-Key_PN"
+F 5 "5011" H 5500 2125 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 5500 2225 60  0001 L CNN "Category"
+F 7 "Test Points" H 5500 2325 60  0001 L CNN "Family"
+F 8 "http://www.keyelco.com/product-pdf.cfm?p=1320" H 5500 2425 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/keystone-electronics/5011/36-5011-ND/255333" H 5500 2525 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT MULTIPURPOSE BLACK" H 5500 2625 60  0001 L CNN "Description"
+F 11 "Keystone Electronics" H 5500 2725 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5500 2825 60  0001 L CNN "Status"
+	1    5300 1625
 	-1   0    0    1   
 $EndComp
 $Comp
 L FANTM_parts:MAX1735 U2
 U 1 1 608B1D9B
-P 3500 2050
-F 0 "U2" H 3500 2515 50  0000 C CNN
-F 1 "MAX1735" H 3500 2424 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4200 2650 50  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1735.pdf" H 3750 2250 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/maxim-integrated/MAX1735EUK30-T/1517862" H 3850 3000 50  0001 C CNN "DK_Detail_Page"
-F 5 "MAX1735EUK30+TCT-ND" H 3950 2800 50  0001 C CNN "Digi-Key_PN"
-F 6 "Maxim Integrated" H 3950 2750 50  0001 C CNN "Manufacturer"
-F 7 "MAX1735EUK30+T" H 4050 3100 50  0001 C CNN "MPN"
-F 8 "IC REG LIN NEG ADJ 200MA SOT23-5" H 4550 2900 50  0001 C CNN "Description"
-	1    3500 2050
+P 4075 2050
+F 0 "U2" H 4075 2515 50  0000 C CNN
+F 1 "MAX1735" H 4075 2424 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4775 2650 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1735.pdf" H 4325 2250 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/maxim-integrated/MAX1735EUK30-T/1517862" H 4425 3000 50  0001 C CNN "DK_Detail_Page"
+F 5 "MAX1735EUK30+TCT-ND" H 4525 2800 50  0001 C CNN "Digi-Key_PN"
+F 6 "Maxim Integrated" H 4525 2750 50  0001 C CNN "Manufacturer"
+F 7 "MAX1735EUK30+T" H 4625 3100 50  0001 C CNN "MPN"
+F 8 "IC REG LIN NEG ADJ 200MA SOT23-5" H 5125 2900 50  0001 C CNN "Description"
+	1    4075 2050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1736,68 +1682,188 @@ L FANTM_parts:TPS60403 U1
 U 1 1 608B2891
 P 1800 1850
 F 0 "U1" H 2025 1600 50  0000 L CNN
-F 1 "TPS60403" H 1925 1475 50  0000 L CNN
+F 1 "TPS60402" H 1925 1475 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3100 2700 50  0001 C CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftps60403-q1" H 1850 1850 50  0001 C CNN
 F 4 "https://www.digikey.com/en/products/detail/texas-instruments/TPS60403QDBVRQ1/770875" H 4250 3250 50  0001 C CNN "DK_Detail_Page"
-F 5 "296-18036-1-ND" H 2800 3000 50  0001 C CNN "Digi-Key_PN"
+F 5 "296-31988-1-ND" H 2800 3000 50  0001 C CNN "Digi-Key_PN"
 F 6 "Texas Instruments" H 2800 2900 50  0001 C CNN "Manufacturer"
-F 7 "TPS60403QDBVRQ1" H 2800 2800 50  0001 C CNN "MPN"
+F 7 "TPS60402DBVR" H 2800 2800 50  0001 C CNN "MPN"
 F 8 "IC REG CHARG PUMP INV 60MA SOT23" H 3200 3100 50  0001 C CNN "Description"
-F 9 "60mA" H 2150 2150 50  0000 L CNN "Current"
+F 9 "MAX: 20mA" H 2150 2150 50  0000 L CNN "Current"
 F 10 "-5V" H 2125 2250 50  0000 L CNN "Output"
 	1    1800 1850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4725 1850 4725 1725
+	5300 1850 5300 1725
 Wire Wire Line
-	4375 1850 4725 1850
+	4950 1850 5300 1850
 Wire Wire Line
-	4375 1850 4375 1700
+	4950 1850 4950 1700
 $Comp
-L Device:C C13
+L Device:C C5
 U 1 1 608D2D70
-P 2750 2075
-F 0 "C13" H 2850 1975 50  0000 C CNN
-F 1 "1uF" H 2625 1975 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2788 1925 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B105KOFNNNG.jsp" H 2750 2075 50  0001 C CNN
-F 4 "1276-6471-1-ND" V 2750 2075 50  0001 C CNN "Digi-Key_PN"
-F 5 "Samsung Electro-Mechanics" V 2750 2075 50  0001 C CNN "Manufacturer"
-F 6 "CL21B105KOFNNNG" V 2750 2075 50  0001 C CNN "MPN"
-F 7 "CAP CER 1UF 16V X7R 0805" V 2750 2075 50  0001 C CNN "Description"
-F 8 "16V" V 2498 2075 50  0001 C CNN "Voltage Rating"
-F 9 "X7R" H 2850 2175 50  0000 C CNN "Temperature Coefficient"
-F 10 "0805" H 2625 2175 50  0000 C CNN "Package"
-	1    2750 2075
+P 3325 2075
+F 0 "C5" H 3425 2000 50  0000 C CNN
+F 1 "1uF" H 3225 2000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3363 1925 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B105KOFNNNG.jsp" H 3325 2075 50  0001 C CNN
+F 4 "1276-6471-1-ND" V 3325 2075 50  0001 C CNN "Digi-Key_PN"
+F 5 "Samsung Electro-Mechanics" V 3325 2075 50  0001 C CNN "Manufacturer"
+F 6 "CL21B105KOFNNNG" V 3325 2075 50  0001 C CNN "MPN"
+F 7 "CAP CER 1UF 16V X7R 0805" V 3325 2075 50  0001 C CNN "Description"
+F 8 "16V" V 3073 2075 50  0001 C CNN "Voltage Rating"
+F 9 "X7R" H 3425 2175 50  0000 C CNN "Temperature Coefficient"
+F 10 "0805" H 3200 2175 50  0000 C CNN "Package"
+	1    3325 2075
 	-1   0    0    1   
 $EndComp
-Connection ~ 2350 1850
 Wire Wire Line
-	2350 1850 2750 1850
+	3325 1925 3325 1850
 Wire Wire Line
-	2750 1925 2750 1850
-Connection ~ 2750 1850
+	3325 1850 3500 1850
 Wire Wire Line
-	2750 1850 2925 1850
-Wire Wire Line
-	2750 2225 2750 2275
+	3325 2225 3325 2275
 $Comp
 L power:GND #PWR?
 U 1 1 608D4C88
-P 2750 2275
+P 3325 2275
 AR Path="/6043E029/608D4C88" Ref="#PWR?"  Part="1" 
-AR Path="/605EF1AE/608D4C88" Ref="#PWR0101"  Part="1" 
-F 0 "#PWR0101" H 2750 2025 50  0001 C CNN
-F 1 "GND" H 2755 2102 50  0000 C CNN
-F 2 "" H 2750 2275 50  0001 C CNN
-F 3 "" H 2750 2275 50  0001 C CNN
-	1    2750 2275
+AR Path="/605EF1AE/608D4C88" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 3325 2025 50  0001 C CNN
+F 1 "GND" H 3330 2102 50  0000 C CNN
+F 2 "" H 3325 2275 50  0001 C CNN
+F 3 "" H 3325 2275 50  0001 C CNN
+	1    3325 2275
 	1    0    0    -1  
 $EndComp
 Text Label 1650 1350 1    50   ~ 0
 Cfly-
 Text Label 1950 1150 3    50   ~ 0
 Cfly+
+$Comp
+L Device:C C1
+U 1 1 60903D95
+P 975 2100
+F 0 "C1" H 1075 2000 50  0000 C CNN
+F 1 "3.3uF" H 850 2000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1013 1950 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21A335KPFNNNE.jsp" H 975 2100 50  0001 C CNN
+F 4 "1276-2912-1-ND" V 975 2100 50  0001 C CNN "Digi-Key_PN"
+F 5 "Samsung Electro-Mechanics" V 975 2100 50  0001 C CNN "Manufacturer"
+F 6 "CL21B105KOFNNNG" V 975 2100 50  0001 C CNN "MPN"
+F 7 "CAP CER 3.3UF 10V X5R 0805" V 975 2100 50  0001 C CNN "Description"
+F 8 "10V" V 723 2100 50  0001 C CNN "Voltage Rating"
+F 9 "X5R" H 1075 2200 50  0000 C CNN "Temperature Coefficient"
+F 10 "0805" H 850 2200 50  0000 C CNN "Package"
+	1    975  2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 60904F0E
+P 2350 2075
+F 0 "C3" H 2425 2000 50  0000 C CNN
+F 1 "3.3uF" H 2225 2000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2388 1925 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21A335KPFNNNE.jsp" H 2350 2075 50  0001 C CNN
+F 4 "1276-2912-1-ND" V 2350 2075 50  0001 C CNN "Digi-Key_PN"
+F 5 "Samsung Electro-Mechanics" V 2350 2075 50  0001 C CNN "Manufacturer"
+F 6 "CL21B105KOFNNNG" V 2350 2075 50  0001 C CNN "MPN"
+F 7 "CAP CER 3.3UF 10V X5R 0805" V 2350 2075 50  0001 C CNN "Description"
+F 8 "10V" V 2098 2075 50  0001 C CNN "Voltage Rating"
+F 9 "X5R" H 2450 2175 50  0000 C CNN "Temperature Coefficient"
+F 10 "0805" H 2225 2175 50  0000 C CNN "Package"
+	1    2350 2075
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 609058D1
+P 1800 1000
+F 0 "C2" H 1875 1075 50  0000 C CNN
+F 1 "3.3uF" H 1925 925 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1838 850 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21A335KPFNNNE.jsp" H 1800 1000 50  0001 C CNN
+F 4 "1276-2912-1-ND" V 1800 1000 50  0001 C CNN "Digi-Key_PN"
+F 5 "Samsung Electro-Mechanics" V 1800 1000 50  0001 C CNN "Manufacturer"
+F 6 "CL21B105KOFNNNG" V 1800 1000 50  0001 C CNN "MPN"
+F 7 "CAP CER 3.3UF 10V X5R 0805" V 1800 1000 50  0001 C CNN "Description"
+F 8 "10V" V 1548 1000 50  0001 C CNN "Voltage Rating"
+F 9 "X5R" H 1725 925 50  0000 C CNN "Temperature Coefficient"
+F 10 "0805" H 1700 1075 50  0000 C CNN "Package"
+	1    1800 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60909B14
+P 2825 2275
+AR Path="/6043E029/60909B14" Ref="#PWR?"  Part="1" 
+AR Path="/605EF1AE/60909B14" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 2825 2025 50  0001 C CNN
+F 1 "GND" H 2830 2102 50  0000 C CNN
+F 2 "" H 2825 2275 50  0001 C CNN
+F 3 "" H 2825 2275 50  0001 C CNN
+	1    2825 2275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60909B24
+P 2825 2075
+AR Path="/60909B24" Ref="C?"  Part="1" 
+AR Path="/606EA892/60909B24" Ref="C?"  Part="1" 
+AR Path="/6043E029/60909B24" Ref="C?"  Part="1" 
+AR Path="/605EF1AE/60909B24" Ref="C4"  Part="1" 
+F 0 "C4" H 2900 2000 50  0000 C CNN
+F 1 "0.1uF" H 2700 2000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2863 1925 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 2825 2075 50  0001 C CNN
+F 4 "CC0603KRX7R7BB104" H 2825 2075 50  0001 C CNN "MPN"
+F 5 "X7R" H 2975 2175 50  0000 C CNN "Temperature"
+F 6 "±10%" H 2975 2175 50  0001 C CNN "Tolerance"
+F 7 "16V" H 2825 2075 50  0001 C CNN "Rated Voltage"
+F 8 "0603" H 2675 2175 50  0000 C CNN "Package Size"
+F 9 "CAP CER 0.1UF 16V X7R 0603" H 2825 2075 50  0001 C CNN "Description"
+F 10 "Yageo" H 2825 2075 50  0001 C CNN "Supplier"
+F 11 "Yageo" H 2825 2075 50  0001 C CNN "Manufacturer"
+F 12 "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R7BB104/302822" H 2825 2075 50  0001 C CNN "Digikey"
+F 13 "311-1088-1-ND" H 2825 2075 50  0001 C CNN "Digi-Key_PN"
+	1    2825 2075
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2725 1850 2825 1850
+Wire Wire Line
+	2825 1850 2825 1925
+Wire Wire Line
+	2425 1850 2350 1850
+Connection ~ 2350 1850
+Wire Wire Line
+	2825 1850 3325 1850
+Connection ~ 2825 1850
+Connection ~ 3325 1850
+$Comp
+L Device:R_US R1
+U 1 1 6090BE15
+P 2575 1850
+F 0 "R1" V 2475 1750 50  0000 C CNN
+F 1 "249" V 2475 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2615 1840 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2575 1850 50  0001 C CNN
+F 4 "311-249HRCT-ND" V 2575 1850 50  0001 C CNN "Digi-Key_PN"
+F 5 "Yageo" V 2575 1850 50  0001 C CNN "Manufacturer"
+F 6 "RC0603FR-07249RL" V 2575 1850 50  0001 C CNN "MPN"
+F 7 "RES SMD 249 OHM 1% 1/10W 0603" V 2575 1850 50  0001 C CNN "Description"
+F 8 "±1%" V 2650 1725 50  0000 C CNN "Tolerance"
+F 9 "0603" V 2650 2000 50  0000 C CNN "Package"
+	1    2575 1850
+	0    1    1    0   
+$EndComp
+Text Label 2125 1850 0    50   ~ 0
+INV_OUT
+Wire Wire Line
+	2825 2225 2825 2275
 $EndSCHEMATC

@@ -6,6 +6,12 @@ K 296-23564-1-ND
 F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2FINA818
 $ENDCMP
 #
+$CMP INA819IDGK
+D IC INST AMP 1 CIRCUIT 8VSSOP
+K 296-23564-1-ND
+F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2FINA819
+$ENDCMP
+#
 $CMP MAX1735
 F https://datasheets.maximintegrated.com/en/ds/MAX1735.pdf
 $ENDCMP

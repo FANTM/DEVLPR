@@ -61,9 +61,9 @@ Text Label 10550 1400 0    60   ~ 0
 AREF
 NoConn ~ 9400 1600
 Text Label 10550 1300 0    60   ~ 0
-A4(SDA)
+SDA
 Text Label 10550 1200 0    60   ~ 0
-A5(SCL)
+SCL
 Text Notes 10850 1000 0    60   ~ 0
 Holes
 Text Notes 8550 750  0    60   ~ 0
@@ -318,14 +318,10 @@ F 12 "Active" H 1350 2300 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 1000 1850 1000
-Wire Wire Line
-	1550 1100 1850 1100
-Wire Wire Line
 	1550 1200 1850 1200
-Text Label 1850 1100 2    50   ~ 0
+Text Label 2275 1100 2    50   ~ 0
 EMG_P
-Text Label 1850 1000 2    50   ~ 0
+Text Label 2275 1000 2    50   ~ 0
 EMG_N
 Text Label 1850 1200 2    50   ~ 0
 EMG_GND
@@ -1910,4 +1906,62 @@ Text Label 6675 2750 0    50   ~ 0
 EMG_OUT
 Wire Wire Line
 	6675 2750 7150 2750
+$Comp
+L dk_Test-Points:5011 TP2
+U 1 1 60A0F888
+P 1950 1275
+AR Path="/60A0F888" Ref="TP2"  Part="1" 
+AR Path="/605EF1AE/60A0F888" Ref="TP?"  Part="1" 
+F 0 "TP2" H 1900 1322 50  0001 R CNN
+F 1 "EMG_P" H 2075 1200 50  0000 R CNN
+F 2 "digikey-footprints:Test_Point_D1.02mm" H 2150 1475 60  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1320" H 2150 1575 60  0001 L CNN
+F 4 "36-5011-ND" H 2150 1675 60  0001 L CNN "Digi-Key_PN"
+F 5 "5011" H 2150 1775 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 2150 1875 60  0001 L CNN "Category"
+F 7 "Test Points" H 2150 1975 60  0001 L CNN "Family"
+F 8 "http://www.keyelco.com/product-pdf.cfm?p=1320" H 2150 2075 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/keystone-electronics/5011/36-5011-ND/255333" H 2150 2175 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT MULTIPURPOSE BLACK" H 2150 2275 60  0001 L CNN "Description"
+F 11 "Keystone Electronics" H 2150 2375 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2150 2475 60  0001 L CNN "Status"
+	1    1950 1275
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Test-Points:5011 TP1
+U 1 1 60A17C25
+P 1950 825
+AR Path="/60A17C25" Ref="TP1"  Part="1" 
+AR Path="/605EF1AE/60A17C25" Ref="TP?"  Part="1" 
+F 0 "TP1" H 1900 872 50  0001 R CNN
+F 1 "EMG_N" H 2075 750 50  0000 R CNN
+F 2 "digikey-footprints:Test_Point_D1.02mm" H 2150 1025 60  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1320" H 2150 1125 60  0001 L CNN
+F 4 "36-5011-ND" H 2150 1225 60  0001 L CNN "Digi-Key_PN"
+F 5 "5011" H 2150 1325 60  0001 L CNN "MPN"
+F 6 "Test and Measurement" H 2150 1425 60  0001 L CNN "Category"
+F 7 "Test Points" H 2150 1525 60  0001 L CNN "Family"
+F 8 "http://www.keyelco.com/product-pdf.cfm?p=1320" H 2150 1625 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/keystone-electronics/5011/36-5011-ND/255333" H 2150 1725 60  0001 L CNN "DK_Detail_Page"
+F 10 "PC TEST POINT MULTIPURPOSE BLACK" H 2150 1825 60  0001 L CNN "Description"
+F 11 "Keystone Electronics" H 2150 1925 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2150 2025 60  0001 L CNN "Status"
+	1    1950 825 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1550 1100 1950 1100
+Wire Wire Line
+	1550 1000 1950 1000
+Wire Wire Line
+	1950 925  1950 1000
+Connection ~ 1950 1000
+Wire Wire Line
+	1950 1000 2275 1000
+Wire Wire Line
+	1950 1175 1950 1100
+Connection ~ 1950 1100
+Wire Wire Line
+	1950 1100 2275 1100
 $EndSCHEMATC
