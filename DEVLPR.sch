@@ -340,8 +340,8 @@ EMG_GND
 $Sheet
 S 1275 3450 1750 300 
 U 605EF1AE
-F0 "-5V Source" 50
-F1 "Minus5Source.sch" 50
+F0 "-3V Source" 50
+F1 "Minus3Source.sch" 50
 $EndSheet
 $Bitmap
 Pos 10720 6970
