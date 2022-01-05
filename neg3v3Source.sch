@@ -1,0 +1,470 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L FANTM_parts:LT3462A U2
+U 1 1 61BB6764
+P 2300 1900
+F 0 "U2" H 2050 2200 50  0000 R CNN
+F 1 "LT3462A" H 2700 1550 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 3100 1400 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/lt3462.pdf" H 2550 1900 50  0001 C CNN
+F 4 "LT3462AES6#TRMPBFCT-ND" H 2300 1900 50  0001 C CNN "Digi-Key_PN"
+	1    2300 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 6157D7E3
+P 3050 1600
+F 0 "R1" H 2750 1800 50  0000 L CNN
+F 1 "267k" H 2750 1700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3090 1590 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773272&DocType=DS&DocLang=English" H 3050 1600 50  0001 C CNN
+F 4 "RES SMD 267K OHM 0.1% 1/4W 0805" H 3050 1600 50  0001 C CNN "Description"
+F 5 "A110776CT-ND" H 3050 1600 50  0001 C CNN "Digi-Key_PN"
+F 6 "TE Connectivity Passive Product" H 3050 1600 50  0001 C CNN "Manufacturer"
+F 7 "3-2176094-4" H 3050 1600 50  0001 C CNN "MPN"
+F 8 "0.25W, 1/4W" H 3050 1600 50  0001 C CNN "Power"
+F 9 "±0.1%" H 2850 1500 50  0000 C CNN "Tolerance"
+F 10 "0805" H 2850 1600 50  0000 C CNN "Package"
+	1    3050 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L2
+U 1 1 61BB6766
+P 2800 1150
+F 0 "L2" V 3172 1150 50  0000 C CNN
+F 1 "10uH" V 3081 1150 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 2800 1150 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/P02/JELF243B-0017.pdf" H 2800 1150 50  0001 C CNN
+F 4 "FIXED IND 10UH 100MA 390MOHM SMD" V 2800 1150 50  0001 C CNN "Description"
+F 5 "LQM21FN100M80L" V 2800 1150 50  0001 C CNN "MPN"
+F 6 "Murata Electronics" V 2800 1150 50  0001 C CNN "Manufacturer"
+F 7 "490-6682-1-ND" V 2800 1150 50  0001 C CNN "Digi-Key_PN"
+F 8 "±20%" V 2800 1150 50  0001 C CNN "Tolerance"
+F 9 "100 mA" V 2990 1150 50  0000 C CNN "Current Rating (Amps)"
+F 10 "0805" V 2899 1150 50  0000 C CNN "Package"
+	1    2800 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 61BB6767
+P 3050 2050
+F 0 "R2" H 2950 1900 50  0000 R CNN
+F 1 "102k" H 2950 2000 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3090 2040 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_12.pdf" H 3050 2050 50  0001 C CNN
+F 4 "YAG4817CT-ND" H 3050 2050 50  0001 C CNN "Digi-Key_PN"
+F 5 "YAGEO" H 3050 2050 50  0001 C CNN "Manufacturer"
+F 6 "RT0805BRD07102KL" H 3050 2050 50  0001 C CNN "MPN"
+F 7 "RES SMD 102K OHM 0.1% 1/8W 0805" H 3050 2050 50  0001 C CNN "Description"
+F 8 "±0.1%" H 2850 2200 50  0000 C CNN "Tolerance"
+F 9 "0805" H 2850 2100 50  0000 C CNN "Package"
+	1    3050 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 61BB6769
+P 3350 1600
+F 0 "C3" H 3450 1800 50  0000 L CNN
+F 1 "22pF" H 3450 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3388 1450 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21C220JBANNNC.jsp" H 3350 1600 50  0001 C CNN
+F 4 "1276-1047-1-ND" H 3350 1600 50  0001 C CNN "Digi-Key_PN"
+F 5 "Samsung Electro-Mechanics" H 3350 1600 50  0001 C CNN "Manufacturer"
+F 6 "CL21C220JBANNNC" H 3350 1600 50  0001 C CNN "MPN"
+F 7 "CAP CER 22PF 50V C0G/NP0 0805" H 3350 1600 50  0001 C CNN "Description"
+F 8 "±5%" H 3350 1600 50  0001 C CNN "Tolerance"
+F 9 "50V" H 3350 1600 50  0001 C CNN "Voltage - Rated"
+F 10 "C0G, NP0" H 3550 1500 50  0000 C CNN "Temperature Coefficient"
+F 11 "0805" H 3550 1600 50  0000 C CNN "Package"
+	1    3350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 61BB676A
+P 3750 1600
+F 0 "C4" H 3850 1800 50  0000 L CNN
+F 1 "4.7uF" H 3850 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3788 1450 50  0001 C CNN
+F 3 "~" H 3750 1600 50  0001 C CNN
+F 4 "TDK Corporation" H 3750 1600 50  0001 C CNN "Manufacturer"
+F 5 "CGA4J3X7R1C475K125AB" H 3750 1600 50  0001 C CNN "MPN"
+F 6 "CAP CER 4.7UF 16V X7R 0805" H 3750 1600 50  0001 C CNN "Description"
+F 7 "445-6969-1-ND" H 3750 1600 50  0001 C CNN "Digi-Key_PN"
+F 8 "±10%" H 3750 1600 50  0001 C CNN "Tolerance"
+F 9 "16V" H 3750 1600 50  0001 C CNN "Voltage - Rated"
+F 10 "X7R" H 3950 1500 50  0000 C CNN "Temperature Coefficient"
+F 11 "0805" H 3950 1600 50  0000 C CNN "Package"
+	1    3750 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1550 2200 1350
+Wire Wire Line
+	2200 1350 2050 1350
+Wire Wire Line
+	2050 1350 2050 1150
+Wire Wire Line
+	2050 1150 2150 1150
+Wire Wire Line
+	2050 1150 1950 1150
+Connection ~ 2050 1150
+Wire Wire Line
+	2400 1550 2400 1350
+Wire Wire Line
+	2400 1350 2550 1350
+Wire Wire Line
+	2550 1350 2550 1150
+Wire Wire Line
+	2550 1150 2450 1150
+Wire Wire Line
+	2650 1150 2550 1150
+Connection ~ 2550 1150
+Wire Wire Line
+	2600 1800 3050 1800
+Wire Wire Line
+	3050 1800 3050 1750
+Wire Wire Line
+	3050 1800 3050 1900
+Connection ~ 3050 1800
+Wire Wire Line
+	3050 2250 3050 2200
+Wire Wire Line
+	3050 1150 2950 1150
+Wire Wire Line
+	3350 1750 3350 1800
+Wire Wire Line
+	3350 1800 3050 1800
+$Comp
+L Device:C C5
+U 1 1 615915AB
+P 4450 1600
+F 0 "C5" H 4550 1800 50  0000 L CNN
+F 1 "10uF" H 4550 1700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4488 1450 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B106KOQNNNG.jsp" H 4450 1600 50  0001 C CNN
+F 4 "1276-6472-1-ND" H 4450 1600 50  0001 C CNN "Digi-Key_PN"
+F 5 "Samsung Electro-Mechanics" H 4450 1600 50  0001 C CNN "Manufacturer"
+F 6 "CL21B106KOQNNNG" H 4450 1600 50  0001 C CNN "MPN"
+F 7 "CAP CER 10UF 16V X7R 0805" H 4450 1600 50  0001 C CNN "Description"
+F 8 "±10%" H 4450 1600 50  0001 C CNN "Tolerance"
+F 9 "16V" H 4450 1600 50  0001 C CNN "Voltage - Rated"
+F 10 "X7R" H 4650 1500 50  0000 C CNN "Temperature Coefficient"
+F 11 "0805" H 4650 1600 50  0000 C CNN "Package"
+	1    4450 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1150 4250 1150
+Wire Wire Line
+	2600 1950 2750 1950
+Wire Wire Line
+	2750 1950 2750 2250
+Wire Wire Line
+	2750 2250 3050 2250
+Wire Wire Line
+	1350 1750 1350 1850
+Wire Wire Line
+	3750 1750 3750 1850
+Wire Wire Line
+	4450 1750 4450 1850
+Connection ~ 3050 1150
+Wire Wire Line
+	3050 1150 3050 1450
+Wire Wire Line
+	3050 1150 3350 1150
+Wire Wire Line
+	4450 1150 4450 1450
+Wire Wire Line
+	3750 1150 3750 1450
+Connection ~ 3750 1150
+Wire Wire Line
+	3750 1150 3950 1150
+Wire Wire Line
+	3350 1150 3350 1450
+Connection ~ 3350 1150
+Wire Wire Line
+	3350 1150 3650 1150
+Wire Wire Line
+	2300 2300 2300 2400
+Wire Wire Line
+	1550 1150 1550 1850
+Wire Wire Line
+	1350 1050 1350 1150
+Wire Wire Line
+	1350 1150 1550 1150
+Connection ~ 1350 1150
+Wire Wire Line
+	1350 1150 1350 1450
+Connection ~ 1550 1150
+Wire Wire Line
+	1550 1150 1650 1150
+Wire Wire Line
+	1550 1850 2000 1850
+$Comp
+L power:+3V3 #PWR0113
+U 1 1 616BB5FF
+P 1350 1050
+F 0 "#PWR0113" H 1350 900 50  0001 C CNN
+F 1 "+3V3" H 1365 1223 50  0000 C CNN
+F 2 "" H 1350 1050 50  0001 C CNN
+F 3 "" H 1350 1050 50  0001 C CNN
+	1    1350 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-3V3 #PWR0114
+U 1 1 61BB676D
+P 4450 1050
+F 0 "#PWR0114" H 4450 1150 50  0001 C CNN
+F 1 "-3V3" H 4465 1223 50  0000 C CNN
+F 2 "" H 4450 1050 50  0001 C CNN
+F 3 "" H 4450 1050 50  0001 C CNN
+	1    4450 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1050 4450 1150
+Connection ~ 4450 1150
+$Comp
+L Device:R_US R3
+U 1 1 615848A9
+P 4100 1150
+F 0 "R3" V 3713 1150 50  0000 C CNN
+F 1 "249" V 3804 1150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4140 1140 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4100 1150 50  0001 C CNN
+F 4 "311-249HRCT-ND" V 4100 1150 50  0001 C CNN "Digi-Key_PN"
+F 5 "Yageo" V 4100 1150 50  0001 C CNN "Manufacturer"
+F 6 "RC0603FR-07249RL" V 4100 1150 50  0001 C CNN "MPN"
+F 7 "RES SMD 249 OHM 1% 1/10W 0603" V 4100 1150 50  0001 C CNN "Description"
+F 8 "±1%" V 3895 1150 50  0000 C CNN "Tolerance"
+F 9 "0603" V 3986 1150 50  0000 C CNN "Package"
+	1    4100 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 61BB6772
+P 1350 1600
+F 0 "C1" H 1100 1750 50  0000 L CNN
+F 1 "1uF" H 1100 1650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1388 1450 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B105KOFNNNG.jsp" H 1350 1600 50  0001 C CNN
+F 4 "1276-6471-1-ND" H 1350 1600 50  0001 C CNN "Digi-Key_PN"
+F 5 "X7R" H 1150 1450 50  0000 C CNN "Temperature Coefficient"
+F 6 "0805" H 1150 1550 50  0000 C CNN "Package"
+F 7 "16V" H 1350 1600 50  0001 C CNN "Voltage Rating"
+F 8 "CL21B105KOFNNNG" H 1350 1600 50  0001 C CNN "MPN"
+F 9 "CAP CER 1UF 16V X7R 0805" H 1350 1600 50  0001 C CNN "Description"
+	1    1350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 61BB6773
+P 2300 1150
+F 0 "C2" V 2250 950 50  0000 L CNN
+F 1 "1uF" V 2250 1250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2338 1000 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B105KOFNNNG.jsp" H 2300 1150 50  0001 C CNN
+F 4 "1276-6471-1-ND" H 2300 1150 50  0001 C CNN "Digi-Key_PN"
+F 5 "X7R" V 2350 1000 50  0000 C CNN "Temperature Coefficient"
+F 6 "0805" V 2350 1300 50  0000 C CNN "Package"
+F 7 "16V" H 2300 1150 50  0001 C CNN "Voltage Rating"
+F 8 "CL21B105KOFNNNG" H 2300 1150 50  0001 C CNN "MPN"
+F 9 "CAP CER 1UF 16V X7R 0805" H 2300 1150 50  0001 C CNN "Description"
+	1    2300 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 61BB6774
+P 1800 1150
+F 0 "L1" V 2172 1150 50  0000 C CNN
+F 1 "10uH" V 2081 1150 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 1800 1150 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/P02/JELF243B-0017.pdf" H 1800 1150 50  0001 C CNN
+F 4 "FIXED IND 10UH 100MA 390MOHM SMD" V 1800 1150 50  0001 C CNN "Description"
+F 5 "LQM21FN100M80L" V 1800 1150 50  0001 C CNN "MPN"
+F 6 "Murata Electronics" V 1800 1150 50  0001 C CNN "Manufacturer"
+F 7 "490-6682-1-ND" V 1800 1150 50  0001 C CNN "Digi-Key_PN"
+F 8 "±20%" V 1800 1150 50  0001 C CNN "Tolerance"
+F 9 "100 mA" V 1990 1150 50  0000 C CNN "Current Rating (Amps)"
+F 10 "0805" V 1899 1150 50  0000 C CNN "Package"
+	1    1800 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61AC24A9
+P 4700 1150
+AR Path="/61AC24A9" Ref="TP?"  Part="1" 
+AR Path="/61577094/61AC24A9" Ref="TP2"  Part="1" 
+AR Path="/605EF1AE/61AC24A9" Ref="TP2"  Part="1" 
+F 0 "TP2" V 4650 1300 50  0000 R CNN
+F 1 "-3V3" V 4700 1650 50  0000 R CNN
+F 2 "digikey-footprints:Test_Point_D1.02mm" H 4900 1150 50  0001 C CNN
+F 3 "https://www.keyelco.com/userAssets/file/M65p56.pdf" H 4900 1150 50  0001 C CNN
+F 4 "36-5001-ND" V 4700 1150 50  0001 C CNN "Digi-Key_PN"
+F 5 "5001" V 4700 1150 50  0001 C CNN "MPN"
+F 6 "PC TEST POINT MINIATURE BLACK" V 4700 1150 50  0001 C CNN "Description"
+F 7 "0.040\" (1.02mm) Hole Diameter" V 4700 1150 50  0001 C CNN "Mounting Type"
+	1    4700 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61AC35DE
+P 3650 1050
+AR Path="/61AC35DE" Ref="TP?"  Part="1" 
+AR Path="/61577094/61AC35DE" Ref="TP1"  Part="1" 
+AR Path="/605EF1AE/61AC35DE" Ref="TP1"  Part="1" 
+F 0 "TP1" V 3600 1200 50  0000 R CNN
+F 1 "-3V3_RAW" V 3650 1550 50  0000 R CNN
+F 2 "digikey-footprints:Test_Point_D1.02mm" H 3850 1050 50  0001 C CNN
+F 3 "https://www.keyelco.com/userAssets/file/M65p56.pdf" H 3850 1050 50  0001 C CNN
+F 4 "36-5001-ND" V 3650 1050 50  0001 C CNN "Digi-Key_PN"
+F 5 "5001" V 3650 1050 50  0001 C CNN "MPN"
+F 6 "PC TEST POINT MINIATURE BLACK" V 3650 1050 50  0001 C CNN "Description"
+F 7 "0.040\" (1.02mm) Hole Diameter" V 3650 1050 50  0001 C CNN "Mounting Type"
+	1    3650 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1050 3650 1150
+Connection ~ 3650 1150
+Wire Wire Line
+	3650 1150 3750 1150
+Wire Wire Line
+	4700 1150 4450 1150
+Text Label 3150 1150 0    50   ~ 0
+-3V3_RAW
+Text Label 2050 1150 3    50   ~ 0
+-3V3_SW
+Text Label 2400 1350 3    50   ~ 0
+-3V3_D
+Text Label 2625 1800 0    50   ~ 0
+-3V3_FB
+Text Label 2750 1950 3    50   ~ 0
+-3V3_SDREF
+$Comp
+L power:GND #PWR0115
+U 1 1 61C1C6A4
+P 2300 2400
+F 0 "#PWR0115" H 2300 2150 50  0001 C CNN
+F 1 "GND" H 2305 2227 50  0000 C CNN
+F 2 "" H 2300 2400 50  0001 C CNN
+F 3 "" H 2300 2400 50  0001 C CNN
+	1    2300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 61C1CA65
+P 3750 1850
+F 0 "#PWR0116" H 3750 1600 50  0001 C CNN
+F 1 "GND" H 3755 1677 50  0000 C CNN
+F 2 "" H 3750 1850 50  0001 C CNN
+F 3 "" H 3750 1850 50  0001 C CNN
+	1    3750 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 61C1D260
+P 4450 1850
+F 0 "#PWR0117" H 4450 1600 50  0001 C CNN
+F 1 "GND" H 4455 1677 50  0000 C CNN
+F 2 "" H 4450 1850 50  0001 C CNN
+F 3 "" H 4450 1850 50  0001 C CNN
+	1    4450 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 61C1D652
+P 1350 1850
+F 0 "#PWR0118" H 1350 1600 50  0001 C CNN
+F 1 "GND" H 1355 1677 50  0000 C CNN
+F 2 "" H 1350 1850 50  0001 C CNN
+F 3 "" H 1350 1850 50  0001 C CNN
+	1    1350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_LED-Indication-Discrete:LG_L29K-G2J1-24-Z D1
+U 1 1 61BE7EBB
+P 1500 3025
+F 0 "D1" H 1450 3362 60  0000 C CNN
+F 1 "GREEN LED" H 1450 3256 60  0000 C CNN
+F 2 "digikey-footprints:0603" H 1700 3225 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 1700 3325 60  0001 L CNN
+F 4 "475-2709-1-ND" H 1700 3425 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG L29K-G2J1-24-Z" H 1700 3525 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 1700 3625 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 1700 3725 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493945/LG%20L29K.pdf" H 1700 3825 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LG-L29K-G2J1-24-Z/475-2709-1-ND/1938876" H 1700 3925 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0603 SMD" H 1700 4025 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 1700 4125 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1700 4225 60  0001 L CNN "Status"
+	1    1500 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R20
+U 1 1 61BE9D18
+P 1900 3025
+F 0 "R20" V 1513 3025 50  0000 C CNN
+F 1 "1k" V 1604 3025 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1940 3015 50  0001 C CNN
+F 3 "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf" H 1900 3025 50  0001 C CNN
+F 4 "RMCF0603JJ1K00CT-ND" V 1900 3025 50  0001 C CNN "Digi-Key_PN"
+F 5 "RMCF0603JJ1K00" V 1900 3025 50  0001 C CNN "MPN"
+F 6 "RES 1K OHM 5% 1/10W 0603" V 1900 3025 50  0001 C CNN "Description"
+F 7 "±5%" V 1695 3025 50  0000 C CNN "Tolerance"
+F 8 "0603" V 1786 3025 50  0000 C CNN "Package"
+	1    1900 3025
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0146
+U 1 1 61BEAAE5
+P 1100 3125
+F 0 "#PWR0146" H 1100 2875 50  0001 C CNN
+F 1 "GND" H 1105 2952 50  0000 C CNN
+F 2 "" H 1100 3125 50  0001 C CNN
+F 3 "" H 1100 3125 50  0001 C CNN
+	1    1100 3125
+	1    0    0    -1  
+$EndComp
+Text Label 2550 3025 2    50   ~ 0
+-3V3_RAW
+Wire Wire Line
+	2550 3025 2050 3025
+Wire Wire Line
+	1750 3025 1600 3025
+Wire Wire Line
+	1300 3025 1100 3025
+Wire Wire Line
+	1100 3025 1100 3125
+$EndSCHEMATC

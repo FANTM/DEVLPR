@@ -317,32 +317,12 @@ F 12 "Active" H 1350 2300 60  0001 L CNN "Status"
 	1    1150 1100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1550 1200 1850 1200
-Text Label 2275 1100 2    50   ~ 0
+Text Label 575  2050 0    50   ~ 0
 EMG_P
-Text Label 2275 1000 2    50   ~ 0
+Text Label 575  2150 0    50   ~ 0
 EMG_N
-Text Label 1850 1200 2    50   ~ 0
+Text Label 575  2250 0    50   ~ 0
 EMG_GND
-Wire Wire Line
-	1275 2050 725  2050
-Wire Wire Line
-	1275 2150 725  2150
-Wire Wire Line
-	1275 2250 725  2250
-Text Label 725  2050 0    50   ~ 0
-EMG_P
-Text Label 725  2150 0    50   ~ 0
-EMG_N
-Text Label 725  2250 0    50   ~ 0
-EMG_GND
-$Sheet
-S 1275 3450 1750 300 
-U 605EF1AE
-F0 "-3V Source" 50
-F1 "Minus3Source.sch" 50
-$EndSheet
 $Bitmap
 Pos 10720 6970
 Scale 1.000000
@@ -1888,80 +1868,157 @@ Wire Wire Line
 	7650 2600 8075 2600
 Wire Wire Line
 	7650 2700 8075 2700
-$Sheet
-S 1275 1900 1750 1050
-U 6043E029
-F0 "EMG Amplifiers" 50
-F1 "emg_amplifier.sch" 50
-F2 "EMG_OUT" O R 3025 2100 50 
-F3 "EMG_P" I L 1275 2050 50 
-F4 "EMG_N" I L 1275 2150 50 
-F5 "EMG_GND" I L 1275 2250 50 
-$EndSheet
-Text Label 3425 2100 2    50   ~ 0
-EMG_OUT
-Wire Wire Line
-	3025 2100 3425 2100
 Text Label 6675 2750 0    50   ~ 0
 EMG_OUT
 Wire Wire Line
 	6675 2750 7150 2750
+$Sheet
+S 1275 3450 1750 300 
+U 605EF1AE
+F0 "-3V3 Source" 50
+F1 "neg3v3Source.sch" 50
+$EndSheet
+Wire Wire Line
+	575  2050 1300 2050
+Wire Wire Line
+	575  2150 1300 2150
+Wire Wire Line
+	575  2250 1300 2250
+Text Label 2000 1000 2    50   ~ 0
+EMG_P
+Text Label 2000 1100 2    50   ~ 0
+EMG_N
+Text Label 2000 1200 2    50   ~ 0
+EMG_GND
+Wire Wire Line
+	2000 1000 1550 1000
+Wire Wire Line
+	1550 1100 2000 1100
+Wire Wire Line
+	2000 1200 1550 1200
+Text Label 3500 2100 2    50   ~ 0
+EMG_OUT
+Wire Wire Line
+	3500 2100 3050 2100
+$Sheet
+S 1300 1900 1750 1050
+U 6043E029
+F0 "EMG Amplifiers" 50
+F1 "emg_amp.sch" 50
+F2 "EMG_OUT" O R 3050 2100 50 
+F3 "EMG_P" I L 1300 2050 50 
+F4 "EMG_N" I L 1300 2150 50 
+F5 "EMG_GND" I L 1300 2250 50 
+$EndSheet
 $Comp
-L dk_Test-Points:5011 TP2
-U 1 1 60A0F888
-P 1950 1275
-AR Path="/60A0F888" Ref="TP2"  Part="1" 
-AR Path="/605EF1AE/60A0F888" Ref="TP?"  Part="1" 
-F 0 "TP2" H 1900 1322 50  0001 R CNN
-F 1 "EMG_P" H 2075 1200 50  0000 R CNN
-F 2 "digikey-footprints:Test_Point_D1.02mm" H 2150 1475 60  0001 L CNN
-F 3 "http://www.keyelco.com/product-pdf.cfm?p=1320" H 2150 1575 60  0001 L CNN
-F 4 "36-5011-ND" H 2150 1675 60  0001 L CNN "Digi-Key_PN"
-F 5 "5011" H 2150 1775 60  0001 L CNN "MPN"
-F 6 "Test and Measurement" H 2150 1875 60  0001 L CNN "Category"
-F 7 "Test Points" H 2150 1975 60  0001 L CNN "Family"
-F 8 "http://www.keyelco.com/product-pdf.cfm?p=1320" H 2150 2075 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/keystone-electronics/5011/36-5011-ND/255333" H 2150 2175 60  0001 L CNN "DK_Detail_Page"
-F 10 "PC TEST POINT MULTIPURPOSE BLACK" H 2150 2275 60  0001 L CNN "Description"
-F 11 "Keystone Electronics" H 2150 2375 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 2150 2475 60  0001 L CNN "Status"
-	1    1950 1275
+L dk_Tactile-Switches:PTS645SM43SMTR92_LFS S1
+U 1 1 61C1706F
+P 4675 2350
+F 0 "S1" H 4675 2697 60  0000 C CNN
+F 1 "PTS645SM43SMTR92_LFS" H 4675 2591 60  0000 C CNN
+F 2 "digikey-footprints:Switch_Tactile_SMD_6x6mm_PTS645" H 4875 2550 60  0001 L CNN
+F 3 "https://www.ckswitches.com/media/1471/pts645.pdf" H 4875 2650 60  0001 L CNN
+F 4 "CKN9112CT-ND" H 4875 2750 60  0001 L CNN "Digi-Key_PN"
+F 5 "PTS645SM43SMTR92 LFS" H 4875 2850 60  0001 L CNN "MPN"
+F 6 "Switches" H 4875 2950 60  0001 L CNN "Category"
+F 7 "Tactile Switches" H 4875 3050 60  0001 L CNN "Family"
+F 8 "https://www.ckswitches.com/media/1471/pts645.pdf" H 4875 3150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/c-k/PTS645SM43SMTR92-LFS/CKN9112CT-ND/1146934" H 4875 3250 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH TACTILE SPST-NO 0.05A 12V" H 4875 3350 60  0001 L CNN "Description"
+F 11 "C&K" H 4875 3450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4875 3550 60  0001 L CNN "Status"
+	1    4675 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4475 2250 4475 2450
+Connection ~ 4475 2450
+Wire Wire Line
+	4475 2450 4475 2550
+Wire Wire Line
+	4875 2250 4875 2350
+Connection ~ 4875 2350
+Wire Wire Line
+	4875 2350 4875 2450
+Text Label 5200 2350 2    60   ~ 0
+Reset
+Wire Wire Line
+	4875 2350 5200 2350
+$Comp
+L power:GND #PWR0147
+U 1 1 61C20B52
+P 4475 2550
+F 0 "#PWR0147" H 4475 2300 50  0001 C CNN
+F 1 "GND" H 4475 2400 50  0000 C CNN
+F 2 "" H 4475 2550 50  0000 C CNN
+F 3 "" H 4475 2550 50  0000 C CNN
+	1    4475 2550
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Test-Points:5011 TP1
-U 1 1 60A17C25
-P 1950 825
-AR Path="/60A17C25" Ref="TP1"  Part="1" 
-AR Path="/605EF1AE/60A17C25" Ref="TP?"  Part="1" 
-F 0 "TP1" H 1900 872 50  0001 R CNN
-F 1 "EMG_N" H 2075 750 50  0000 R CNN
-F 2 "digikey-footprints:Test_Point_D1.02mm" H 2150 1025 60  0001 L CNN
-F 3 "http://www.keyelco.com/product-pdf.cfm?p=1320" H 2150 1125 60  0001 L CNN
-F 4 "36-5011-ND" H 2150 1225 60  0001 L CNN "Digi-Key_PN"
-F 5 "5011" H 2150 1325 60  0001 L CNN "MPN"
-F 6 "Test and Measurement" H 2150 1425 60  0001 L CNN "Category"
-F 7 "Test Points" H 2150 1525 60  0001 L CNN "Family"
-F 8 "http://www.keyelco.com/product-pdf.cfm?p=1320" H 2150 1625 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/keystone-electronics/5011/36-5011-ND/255333" H 2150 1725 60  0001 L CNN "DK_Detail_Page"
-F 10 "PC TEST POINT MULTIPURPOSE BLACK" H 2150 1825 60  0001 L CNN "Description"
-F 11 "Keystone Electronics" H 2150 1925 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 2150 2025 60  0001 L CNN "Status"
-	1    1950 825 
-	-1   0    0    1   
+L FANTM_parts:Sticker S2
+U 1 1 61C2A937
+P 9775 3825
+F 0 "S2" H 9983 3871 50  0000 L CNN
+F 1 "Linus" H 9983 3780 50  0000 L CNN
+F 2 "FANTM:linus_xsm" H 9775 3825 50  0001 C CNN
+F 3 "" H 9775 3825 50  0001 C CNN
+	1    9775 3825
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1550 1100 1950 1100
-Wire Wire Line
-	1550 1000 1950 1000
-Wire Wire Line
-	1950 925  1950 1000
-Connection ~ 1950 1000
-Wire Wire Line
-	1950 1000 2275 1000
-Wire Wire Line
-	1950 1175 1950 1100
-Connection ~ 1950 1100
-Wire Wire Line
-	1950 1100 2275 1100
+$Comp
+L FANTM_parts:Sticker S3
+U 1 1 61C2AFF4
+P 9775 4250
+F 0 "S3" H 9983 4296 50  0000 L CNN
+F 1 "Sinclair" H 9983 4205 50  0000 L CNN
+F 2 "FANTM:sin_ham_bitmap_sm" H 9775 4250 50  0001 C CNN
+F 3 "" H 9775 4250 50  0001 C CNN
+	1    9775 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L FANTM_parts:Sticker S4
+U 1 1 61C2B530
+P 10525 3825
+F 0 "S4" H 10733 3871 50  0000 L CNN
+F 1 "Kicad" H 10733 3780 50  0000 L CNN
+F 2 "Symbol:KiCad-Logo2_5mm_SilkScreen" H 10525 3825 50  0001 C CNN
+F 3 "" H 10525 3825 50  0001 C CNN
+	1    10525 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L FANTM_parts:Sticker S5
+U 1 1 61C2BE1E
+P 10525 4250
+F 0 "S5" H 10733 4296 50  0000 L CNN
+F 1 "OSHW" H 10733 4205 50  0000 L CNN
+F 2 "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" H 10525 4250 50  0001 C CNN
+F 3 "" H 10525 4250 50  0001 C CNN
+	1    10525 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L FANTM_parts:Sticker S6
+U 1 1 61C372D8
+P 9775 4700
+F 0 "S6" H 9983 4746 50  0000 L CNN
+F 1 "Portrait" H 9983 4655 50  0000 L CNN
+F 2 "FANTM:portait" H 9775 4700 50  0001 C CNN
+F 3 "" H 9775 4700 50  0001 C CNN
+	1    9775 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L FANTM_parts:Sticker S7
+U 1 1 61C3BECB
+P 10525 4725
+F 0 "S7" H 10733 4771 50  0000 L CNN
+F 1 "Name" H 10733 4680 50  0000 L CNN
+F 2 "FANTM:name" H 10525 4725 50  0001 C CNN
+F 3 "" H 10525 4725 50  0001 C CNN
+	1    10525 4725
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -12,8 +12,36 @@ K 296-23564-1-ND
 F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2FINA819
 $ENDCMP
 #
+$CMP INA819IDRGR
+D IC INST AMP 1 CIRCUIT 8VSSOP
+K 296-23564-1-ND
+F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2FINA819
+$ENDCMP
+#
+$CMP INA821IDGKT
+D IC INST AMP 1 CIRCUIT 8VSSOP
+K 296-23564-1-ND
+F https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fina821
+$ENDCMP
+#
+$CMP LT3462A
+F https://www.analog.com/media/en/technical-documentation/data-sheets/lt3462.pdf
+$ENDCMP
+#
 $CMP MAX1735
 F https://datasheets.maximintegrated.com/en/ds/MAX1735.pdf
+$ENDCMP
+#
+$CMP MCP1501
+F https://ww1.microchip.com/downloads/en/DeviceDoc/20005474E.pdf
+$ENDCMP
+#
+$CMP MCP3464
+F https://ww1.microchip.com/downloads/en/DeviceDoc/MCP3461-2-4-Two-Four-Eight-Channel-153.6-ksps-Low-Noise-16-Bit-Delta-Sigma-ADC-Data-Sheet-20006180D.pdf
+$ENDCMP
+#
+$CMP OPA187IDR
+F https://www.ti.com/lit/ds/symlink/opa4187.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1639531065328&ref_url=http%253A%252F%252Fwinporcadcip01%252FCIP-E%252FComponent%252FIndex%252FICs%253Fpn%253DJ69586
 $ENDCMP
 #
 $CMP OPA375DCK
